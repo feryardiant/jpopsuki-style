@@ -471,6 +471,12 @@ a {
     color: #396EA1;
 }
 
+ul a,
+ol a,
+table a {
+    display: inline-block;
+}
+
 table {
     width: 100%;
 }
@@ -478,6 +484,35 @@ table {
 table .colhead {
     background: #eee;
     border-bottom: 1px solid #ddd;
+}
+
+table .colhead_dark {
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    line-height: 1.4em;
+    padding: 4px;
+}
+
+table .sign {
+    width: 5%;
+}
+
+table .colhead_dark td {
+    padding-top: 10px;
+}
+
+table td.label {
+    text-align: right;
+}
+
+table tr:hover td {
+    background: #eee;
+}
+
+#forums table tr:hover td {
+    background: transparent;
 }
 
 input[type="text"],
@@ -656,37 +691,6 @@ select {
     position: relative;
     padding: 0 20px 20px;
     z-index: 2;
-}
-
-#content ul a,
-#content ol a,
-#content table a {
-    display: inline-block;
-}
-
-#content table .colhead_dark {
-    border-bottom: 1px solid #ddd;
-}
-
-#content table td {
-    line-height: 1.4em;
-    padding: 4px;
-}
-
-#content table .sign {
-    width: 5%;
-}
-
-#content table .colhead_dark td {
-    padding-top: 10px;
-}
-
-#content table td.label {
-    text-align: right;
-}
-
-#content table tr:hover td {
-    background: #eee;
 }
 
 #content ul,
