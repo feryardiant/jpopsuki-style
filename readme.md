@@ -2,13 +2,13 @@
 
 ### Screenshots
 
-[![home](screenshots/home.png)](https://raw.githubusercontent.com/feryardiant/jpopsuki-style/gh-pages/screenshots/home.png)
+[![home](screenshots/home.png)](//feryardiant.github.io/jpopsuki-style/screenshots/home.png)
 
-[![artist](screenshots/artist.png)](https://raw.githubusercontent.com/feryardiant/jpopsuki-style/gh-pages/screenshots/artist.png)
+[![artist](screenshots/artist.png)](//feryardiant.github.io/jpopsuki-style/screenshots/artist.png)
 
-[![album](screenshots/album.png)](https://raw.githubusercontent.com/feryardiant/jpopsuki-style/gh-pages/screenshots/album.png)
+[![album](screenshots/album.png)](//feryardiant.github.io/jpopsuki-style/screenshots/album.png)
 
-[![footer](screenshots/footer.png)](https://raw.githubusercontent.com/feryardiant/jpopsuki-style/gh-pages/screenshots/footer.png)
+[![footer](screenshots/footer.png)](//feryardiant.github.io/jpopsuki-style/screenshots/footer.png)
 
 ### Lisence
 
