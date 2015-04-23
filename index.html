@@ -8,11 +8,29 @@
             padding: 0;
         }
         a {
-            display: block;
+            display: inline-block;
             margin-bottom: 10px;
         }
         img {
             max-width: 100%;
+        }
+        h1, h3 {
+            margin: 0 0 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        pre, code {
+            background: #eee;
+            border: 1px solid #ccc;
+        }
+        pre {
+            padding: 5px;
+        }
+        code {
+            padding: 2px;
+        }
+        small {
+            font-size: 70%;
         }
         .wrapper {
             max-width: 1000px;
@@ -26,21 +44,26 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>Just stylesheet for my jpopsuki account</h1>
+            <h1>Just stylesheet for my jpopsuki account <small><a href="//github.com/feryardiant/jpopsuki-style">[Source]</a></small></h1>
         </header>
         <section>
-            <a href="//feryardiant.github.io/jpopsuki-style/screenshots/home.png">
-                <img src="//feryardiant.github.io/jpopsuki-style/screenshots/home.png" alt="home">
-            </a>
-            <a href="//feryardiant.github.io/jpopsuki-style/screenshots/artist.png">
-                <img src="//feryardiant.github.io/jpopsuki-style/screenshots/artist.png" alt="artist">
-            </a>
-            <a href="//feryardiant.github.io/jpopsuki-style/screenshots/album.png">
-                <img src="//feryardiant.github.io/jpopsuki-style/screenshots/album.png" alt="album">
-            </a>
-            <a href="//feryardiant.github.io/jpopsuki-style/screenshots/footer.png">
-                <img src="//feryardiant.github.io/jpopsuki-style/screenshots/footer.png" alt="footer">
-            </a>
+            <h3>Usage</h3>
+            <p>Copy link below and paste in your Site Preferences > Stylesheet > External CSS</p>
+            <pre>http://feryardiant.github.io/jpopsuki-style/style.min.css</pre>
+            <h3>Screenshots</h3>
+            <table border="0"><tr>
+                <td><a href="//feryardiant.github.io/jpopsuki-style/screenshots/home.png"><img src="//feryardiant.github.io/jpopsuki-style/screenshots/home.png" alt="home"></a></td>
+                <td><a href="//feryardiant.github.io/jpopsuki-style/screenshots/artist.png"><img src="//feryardiant.github.io/jpopsuki-style/screenshots/artist.png" alt="artist"></a></td>
+            </tr><tr>
+                <td><a href="//feryardiant.github.io/jpopsuki-style/screenshots/album.png"><img src="//feryardiant.github.io/jpopsuki-style/screenshots/album.png" alt="album"></a></td>
+                <td><a href="//feryardiant.github.io/jpopsuki-style/screenshots/footer.png"><img src="//feryardiant.github.io/jpopsuki-style/screenshots/footer.png" alt="footer"></a></td>
+            </tr></table>
+            <h3>Credits</h3>
+            <ul>
+                <li><a href="//www.google.com/fonts/specimen/Open+Sans">Open Sans font from Google fonts</a></li>
+            </ul>
+            <h3>Lisence</h3>
+            <a href="//www.wtfpl.net">Do What the Fuck You Want to Public License</a>
         </section>
     </div>
 </body>
