@@ -577,13 +577,15 @@ select {
 
 #userinfo,
 #menu,
-#searchbars {
+#searchbars,
+#alerts {
     width: 100%;
     border-bottom: 1px solid #ccc;
 }
 
 #userinfo,
-#searchbars {
+#searchbars,
+#alerts {
     background: #ddd;
 }
 
@@ -637,7 +639,8 @@ select {
 }
 
 #userinfo a:hover,
-#menu a:hover {
+#menu a:hover,
+#alerts a:hover {
     background: #d2d2d2;
 }
 
@@ -675,6 +678,16 @@ select {
     margin-right: 5px;
 }
 
+#alerts {
+  text-align: right;
+}
+
+#alerts a {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0px 14px 2px;
+}
+
 .save_message {
     margin: 0 20px;
     padding: 10px;
@@ -682,7 +695,7 @@ select {
     border-radius: 4px;
     background: #B9E4B2;
     text-align: center;
-    color: #52734C
+    color: #52734C;
 }
 
 /**/
