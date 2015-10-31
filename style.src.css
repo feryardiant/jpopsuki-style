@@ -435,6 +435,14 @@ th {
   float: right;
 }*/
 
+.nobr {
+  white-space: nowrap;
+}
+
+.linkbox {
+  padding: 10px 15px;
+}
+
 
 /* Hi! */
 
@@ -876,14 +884,9 @@ select {
   float: right;
 }
 
-.nobr {
-  white-space: nowrap;
-}
-
 /* Forum */
 
 #forums .linkbox {
-  padding: 10px 15px;
   border-bottom: 1px solid #ddd;
 }
 
