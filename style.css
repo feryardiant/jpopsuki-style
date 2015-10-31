@@ -824,6 +824,62 @@ select {
   margin-top: 10px;
 }
 
+/* Torrent Page */
+
+.torrent_table {
+  margin-left: 0.5px;
+}
+
+.torrent_table tr {
+  vertical-align: top;
+}
+
+.torrent_table tr.torrent,
+.torrent_table tr.group,
+.torrent_table tr.torrent_redline,
+.torrent_table tr.group_redline {
+  font-weight: bold;
+}
+
+.torrent_table tr.group,
+.torrent_table tr.torrent {
+  background-color: #fff;
+}
+
+.torrent_table tr.group_torrent {
+  background-color: #f8f8f8;
+}
+
+.torrent_table tr.group_redline,
+.torrent_table tr.group_torrent_redline,
+.torrent_table tr.torrent_redline {
+  background-color: #fbf1f1;
+}
+
+.torrent_table div.tags {
+  font-weight: normal;
+}
+
+.torrent_table tr .center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.group_torrent span,
+.group_torrent_redline span {
+  float: right;
+}
+
+.torrent span,
+.torrent_redline span {
+  font-weight: normal;
+  float: right;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
 /* Forum */
 
 #forums .linkbox {
