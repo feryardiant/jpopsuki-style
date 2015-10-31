@@ -694,7 +694,7 @@ select {
 #alerts a {
   display: inline-block;
   font-weight: 600;
-  color: #fff;
+  color: #c28686;
 }
 
 .save_message {
@@ -704,7 +704,7 @@ select {
   border-radius: 4px;
   background-color: #b9e4b2;
   text-align: center;
-  color: #52734C;
+  color: #52734c;
 }
 
 /**/
