@@ -475,6 +475,13 @@ a {
   color: #396EA1;
 }
 
+blockquote {
+  padding: 5px 15px;
+  margin: 0;
+  border-left: 5px solid #ddd;
+  background-color: #f8f8f8;
+}
+
 ul a,
 ol a,
 table a {
@@ -686,15 +693,16 @@ select {
   top: 90px;
   left: 8px;
   padding: 0 5px;
-  border: 1px solid #c28686;
-  background-color: #e4b2b2;
+  border: 1px solid #e6c484;
+  background-color: #f7e3be;
   border-radius: 4px;
+  color: #a0834d;
 }
 
 #alerts a {
   display: inline-block;
   font-weight: 600;
-  color: #c28686;
+  color: #a0834d;
 }
 
 .save_message {
@@ -793,7 +801,7 @@ select {
   border-bottom: 1px solid #ddd;
 }
 
-#content .box .pad {
+#content .box.pad {
   line-height: 1.6em;
 }
 
@@ -802,9 +810,14 @@ select {
   margin-top: 5px;
 }
 
+#content .filter_torrents .cat_list td {
+  padding-top: 5px;
+}
+
 #content .filter_torrents .submit {
   border-top: 1px solid #ddd;
   margin-top: 5px;
+  padding-top: 5px;
 }
 
 #content .sidebar {
@@ -915,6 +928,7 @@ select {
 
 #content .forum_post .body {
   border-left: 1px solid #ddd;
+  width: 75%;
 }
 
 #content .forum_post .postcontent {
@@ -922,6 +936,11 @@ select {
   font-size: 1.1em;
 }
 
+#content .forum_post .signature {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
 /**/
 #footer {
   background: #dedede;
