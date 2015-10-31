@@ -9,7 +9,7 @@ Click here to see all [screenshots](http://feryardiant.me/jpopsuki-style)
 Copy link below and paste in your **Site Preferences > Stylesheet > External CSS**
 
 ```
-http://feryardiant.me/jpopsuki-style/style.min.css
+https://feryardiant.me/jpopsuki-style/style.min.css
 ```
 
 ### Contributing
