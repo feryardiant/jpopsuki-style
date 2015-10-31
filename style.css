@@ -453,66 +453,66 @@ th {
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    min-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  min-width: 800px;
 }
 
 body {
-    padding-top: 96px;
-    margin-bottom: 130px;
+  padding-top: 96px;
+  margin-bottom: 130px;
 }
 
 a {
-    text-decoration: none;
-    border: 0;
-    color: #396EA1;
+  text-decoration: none;
+  border: 0;
+  color: #396EA1;
 }
 
 ul a,
 ol a,
 table a {
-    display: inline-block;
+  display: inline-block;
 }
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
 table .colhead {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
 }
 
 table .colhead_dark {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 table td {
-    line-height: 1.4em;
-    padding: 4px;
+  line-height: 1.4em;
+  padding: 4px;
 }
 
 table .sign {
-    width: 5%;
+  width: 5%;
 }
 
 table .colhead_dark td {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 table td.label {
-    text-align: right;
+  text-align: right;
 }
 
 table tr:hover td {
-    background: #eee;
+  background: #eee;
 }
 
 #forums table tr:hover td {
-    background: transparent;
+  background: transparent;
 }
 
 input[type="text"],
@@ -520,201 +520,201 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-    border: 1px solid #ccc;
-    line-height: 1.2em;
-    padding: 4px;
-    font-size: 12px;
-    border-radius: 3px;
+  border: 1px solid #ccc;
+  line-height: 1.2em;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 3px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
 select {
-    height: 28px;
+  height: 28px;
 }
 
 /**/
 #logo {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    padding: 6px 5px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  padding: 6px 5px;
 }
 
 #logo a {
-    width: 307px;
-    background: url(logo.png) no-repeat;
-    height: 60px;
-    display: block;
-    background-size: 307px 60px;
+  width: 307px;
+  background: url(logo.png) no-repeat;
+  height: 60px;
+  display: block;
+  background-size: 307px 60px;
 }
 
 #header,
 #content,
 #footer {
-    clear: both;
-    float: none;
+  clear: both;
+  float: none;
 }
 
 /**/
 #header:after,
 #content:after,
 #footer:after {
-    content: '';
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 /**/
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 #userinfo,
 #menu,
 #searchbars,
 #alerts {
-    width: 100%;
-    border-bottom: 1px solid #ccc;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 #userinfo,
 #searchbars,
 #alerts {
-    background: #ddd;
+  background: #ddd;
 }
 
 #menu {
-    background: #eee;
+  background: #eee;
 }
 
 #userinfo:after,
 #menu:after,
 #searchbars:after {
-    content: '';
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 #userinfo ul,
 #menu ul,
 #searchbars ul {
-    margin: 0;
-    padding: 0;
-    float: right;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style: none;
 }
 
 #userinfo ul {
-    padding: 0 5px;
-    border-left: 1px solid #ccc;
+  padding: 0 5px;
+  border-left: 1px solid #ccc;
 }
 
 #userinfo #userinfo_stats {
-    float: left;
-    color: #444;
-    border-left: 0;
+  float: left;
+  color: #444;
+  border-left: 0;
 }
 
 #userinfo ul li,
 #menu ul li,
 #searchbars ul li {
-    float: left;
+  float: left;
 }
 
 #userinfo ul li {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 #userinfo ul a,
 #userinfo #userinfo_stats li,
 #menu ul a {
-    display: block;
-    line-height: 2em;
+  display: block;
+  line-height: 2em;
 }
 
 #userinfo a:hover,
 #menu a:hover,
 #alerts a:hover {
-    background: #d2d2d2;
+  background: #d2d2d2;
 }
 
 #userinfo ul a,
 #userinfo #userinfo_stats li {
-    padding: 0 7px;
+  padding: 0 7px;
 }
 
 #userinfo #userinfo_stats li a {
-    padding: 0;
+  padding: 0;
 }
 
 #menu ul a {
-    padding: 6px 14px;
+  padding: 6px 14px;
 }
 
 #userinfo > #userinfo_username {
-    float: right;
+  float: right;
 }
 
 #searchbars ul {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #searchbars li {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 #searchbars input[type="text"] {
-    border: 0;
-    padding: 2px 9px;
-    font-size: 11px;
-    line-height: 1.8em;
-    background: #ccc;
-    margin-right: 5px;
+  border: 0;
+  padding: 2px 9px;
+  font-size: 11px;
+  line-height: 1.8em;
+  background: #ccc;
+  margin-right: 5px;
 }
 
 #alerts {
-  text-align: right;
+text-align: right;
 }
 
 #alerts a {
-  display: inline-block;
-  font-weight: 600;
-  padding: 0px 14px 2px;
+display: inline-block;
+font-weight: 600;
+padding: 0px 14px 2px;
 }
 
 .save_message {
-    margin: 0 20px;
-    padding: 10px;
-    border: 1px solid #8EC286;
-    border-radius: 4px;
-    background: #B9E4B2;
-    text-align: center;
-    color: #52734C;
+  margin: 0 20px;
+  padding: 10px;
+  border: 1px solid #8EC286;
+  border-radius: 4px;
+  background: #B9E4B2;
+  text-align: center;
+  color: #52734C;
 }
 
 /**/
 #content {
-    background: #fff;
-    position: relative;
-    padding: 0 20px 20px;
-    z-index: 2;
+  background: #fff;
+  position: relative;
+  padding: 0 20px 20px;
+  z-index: 2;
 }
 
 #content ul,
 #content ol {
-    margin: 0;
-    padding: 0 0 0 25px;
+  margin: 0;
+  padding: 0 0 0 25px;
 }
 
 #content .poll {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #content .poll li {
@@ -728,9 +728,9 @@ select {
 }
 
 #content .poll .graph:after {
-    content: '';
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 #content .stats li {
@@ -757,90 +757,90 @@ select {
 }
 
 #content > .thin {
-    max-width: 1000px;
-    min-width: 800px;
-    margin: 0 auto;
-    padding: 20px 0 0;
+  max-width: 1000px;
+  min-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0 0;
 }
 
 #content > .thin > h2 {
-    display: block;
-    margin: 0 0 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+  display: block;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 #content .box {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #content .filter_torrents > h3,
 #content .box .head {
-    display: block;
-    font-size: 18px;
-    margin: 0 0 10px;
-    padding: 5px 0 10px;
-    border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: 18px;
+  margin: 0 0 10px;
+  padding: 5px 0 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 #content .box .pad {
-    line-height: 1.6em;
+  line-height: 1.6em;
 }
 
 #content .filter_torrents .cat_list {
-    border-top: 1px solid #ddd;
-    margin-top: 5px;
+  border-top: 1px solid #ddd;
+  margin-top: 5px;
 }
 
 #content .filter_torrents .submit {
-    border-top: 1px solid #ddd;
-    margin-top: 5px;
+  border-top: 1px solid #ddd;
+  margin-top: 5px;
 }
 
 #content .sidebar {
-    width: 30%;
-    float: right;
+  width: 30%;
+  float: right;
 }
 
 #content .sidebar .box {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 #content .main_column {
-    width: 70%;
+  width: 70%;
 }
 
 #content #reseed_box {
-    border: 1px solid #ddd;
-    padding: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 #content #reseed_box .head {
-    border-bottom: 0;
-    padding: 0;
-    margin: 0;
+  border-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #content #reseed_box .pad {
-    border-bottom: 0;
-    padding-top: 10px;
-    margin-top: 10px;
+  border-bottom: 0;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /**/
 #footer {
-    background: #dedede;
-    padding: 15px 0;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    width: 100%;
+  background: #dedede;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer p {
-    margin: 7px 0;
-    font-size: 11px;
-    text-align: center;
-    color: #666;
+  margin: 7px 0;
+  font-size: 11px;
+  text-align: center;
+  color: #666;
 }
