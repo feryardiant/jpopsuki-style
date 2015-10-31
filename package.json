@@ -1,0 +1,27 @@
+{
+  "name": "jpopsuki-style",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Just stylesheet for my personal JPopSuki account",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prefix": "postcss --use autoprefixer --autoprefixer.browsers 'last 5 versions' -o style.css style.src.css",
+    "minify": "cleancss --timeout 10 -o style.min.css style.css",
+    "build": "npm run prefix && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feryardiant/jpopsuki-style.git"
+  },
+  "author": "Fery Wardiyanto <ferywardiyanto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feryardiant/jpopsuki-style/issues"
+  },
+  "homepage": "https://github.com/feryardiant/jpopsuki-style#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "clean-css": "^3.4.6",
+    "postcss-cli": "^2.3.2"
+  }
+}
