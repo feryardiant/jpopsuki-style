@@ -824,6 +824,35 @@ select {
   margin-top: 10px;
 }
 
+/* Forum */
+
+#forums .linkbox {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#content .forum_post {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+}
+
+#content .forum_post td {
+  padding: 10px 15px;
+}
+
+#content .forum_post .avatar {
+  width: 25%;
+}
+
+#content .forum_post .body {
+  border-left: 1px solid #ddd;
+}
+
+#content .forum_post .postcontent {
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+
 /**/
 #footer {
   background: #dedede;
