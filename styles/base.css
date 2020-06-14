@@ -21,6 +21,18 @@ body {
   margin-bottom: 130px;
 }
 
+.hidden, .hide {
+  display: none;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.linkbox {
+  padding: 10px 15px;
+}
+
 a {
   text-decoration: none;
   border: 0;
