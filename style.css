@@ -1,7 +1,10 @@
 
-
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @charset 'utf-8';
+:root {
+  --link-color: dddddd;
+  --footer-height: 220px;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -278,10 +281,6 @@ template {
   display: none;
 }
 /* Main */
-:root {
-  --link-color: dddddd;
-  --footer-height: 220px;
-}
 * {
   box-sizing: border-box;
 }
