@@ -18,10 +18,11 @@ body {
 
 body {
   padding-top: 96px;
-  margin-bottom: 130px;
+  margin-bottom: var(--footer-height);
 }
 
-.hidden, .hide {
+.hidden,
+.hide {
   display: none;
 }
 

@@ -79,12 +79,18 @@
   }
 
   input[type="text"] {
-    border: 0;
+    border: 1px solit transparent;
     padding: 2px 9px;
     font-size: 11px;
     line-height: 1.8em;
     background: #ccc;
     margin-right: 5px;
+
+    &:focus,
+    &:active {
+      outline: 0;
+      border-color: var(--link-color);
+    }
   }
 }
 
