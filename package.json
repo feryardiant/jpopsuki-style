@@ -1,27 +1,65 @@
 {
-  "name": "jpopsuki-style",
+  "name": "@feryardiant/jpopsuki-style",
   "version": "0.0.1",
   "private": true,
   "description": "Just stylesheet for my personal JPopSuki account",
-  "homepage": "https://feryardiant.me/jpopsuki-style#readme",
+  "homepage": "https://feryardiant.id/jpopsuki-style#readme",
   "author": "Fery Wardiyanto <ferywardiyanto@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "prefix": "postcss --use autoprefixer --autoprefixer.browsers 'last 5 versions' -o style.css style.src.css",
-    "minify": "cleancss --timeout 10 -o style.min.css style.css",
-    "build": "npm run prefix && npm run minify"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/feryardiant/jpopsuki-style.git"
-  },
+  "repository": "github:feryardiant/jpopsuki-style",
   "bugs": {
     "url": "https://github.com/feryardiant/jpopsuki-style/issues"
   },
+  "main": "style.css",
+  "style": "style.css",
+  "files": [
+    "LICENSE.md",
+    "style.css",
+    "style.min.css",
+    "style.src.css"
+  ],
+  "scripts": {
+    "lint": "stylelint styles/*.css",
+    "dist": "npm run build && npm run minify",
+    "build": "postcss styles/index.css > style.css",
+    "minify": "postcss style.css -u cssnano --no-map > style.min.css"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "clean-css": "^3.4.6",
-    "postcss-cli": "^2.3.2"
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 5 versions",
+    "not ie <= 8"
+  ],
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "discardComments": {
+          "removeAll": true
+        }
+      }
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "stylelint": {},
+      "autoprefixer": {},
+      "postcss-import": {},
+      "postcss-nested": {}
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
   }
 }

@@ -2,14 +2,14 @@
 
 ### Screenshots
 
-Click here to see all [screenshots](http://feryardiant.me/jpopsuki-style)
+Click here to see all [screenshots](https://feryardiant.id/jpopsuki-style)
 
 ### Usage
 
 Copy link below and paste in your **Site Preferences > Stylesheet > External CSS**
 
 ```
-https://feryardiant.me/jpopsuki-style/style.min.css
+https://feryardiant.id/jpopsuki-style/style.min.css
 ```
 
 ### Contributing
@@ -30,7 +30,7 @@ https://feryardiant.me/jpopsuki-style/style.min.css
 - Edit `style.src.css` file as you wish then minify it using:
 
   ```
-  > npm run build
+  > npm run dist
   ```
 
   _This command will automaticaly generate new `style.css` and `style.min.css`._

@@ -1,0 +1,28 @@
+#alerts {
+  text-align: center;
+  position: absolute;
+  width: auto;
+  top: 90px;
+  left: 8px;
+  padding: 0 5px;
+  border: 1px solid #e6c484;
+  background-color: #f7e3be;
+  border-radius: 4px;
+  color: #a0834d;
+
+  a {
+    display: inline-block;
+    font-weight: 600;
+    color: #a0834d;
+  }
+}
+
+.save_message {
+  margin: 0 20px;
+  padding: 10px;
+  border: 1px solid #8ec286;
+  border-radius: 4px;
+  background-color: #b9e4b2;
+  text-align: center;
+  color: #52734c;
+}

@@ -1,0 +1,5 @@
+* text=lf
+
+*.css   linguist-vendored
+
+.github          export-ignore

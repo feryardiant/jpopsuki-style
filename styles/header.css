@@ -1,0 +1,118 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#logo {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  padding: 6px 5px;
+
+  a {
+    width: 307px;
+    background: url(logo.png) no-repeat;
+    height: 60px;
+    display: block;
+    background-size: 307px 60px;
+  }
+}
+
+#userinfo,
+#searchbars {
+  background: #ddd;
+}
+
+#userinfo,
+#menu,
+#searchbars {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+    }
+  }
+}
+
+#menu {
+  background: #eee;
+}
+
+#userinfo #userinfo_stats {
+  float: left;
+  color: #444;
+  border-left: 0;
+}
+
+#userinfo ul {
+  padding: 0 5px;
+  border-left: 1px solid #ccc;
+
+  li {
+    font-size: 11px;
+  }
+}
+
+#searchbars {
+  ul {
+    margin-right: 10px;
+
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  input[type="text"] {
+    border: 0;
+    padding: 2px 9px;
+    font-size: 11px;
+    line-height: 1.8em;
+    background: #ccc;
+    margin-right: 5px;
+  }
+}
+
+#userinfo ul a,
+#userinfo #userinfo_stats li,
+#menu ul a {
+  display: block;
+  line-height: 2em;
+}
+
+#userinfo ul a,
+#userinfo #userinfo_stats li {
+  padding: 0 7px;
+}
+
+#menu ul a {
+  padding: 6px 14px;
+}
+
+#userinfo a:hover,
+#menu a:hover {
+  background: #d2d2d2;
+}
+
+#userinfo #userinfo_stats li a {
+  padding: 0;
+}
+
+#userinfo > #userinfo_username {
+  float: right;
+}

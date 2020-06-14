@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  min-width: 800px;
+}
+
+body {
+  padding-top: 96px;
+  margin-bottom: 130px;
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+  color: #396ea1;
+}
+
+blockquote {
+  padding: 5px 15px;
+  margin: 0;
+  border-left: 5px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+ul a,
+ol a,
+table a {
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+
+  .colhead {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .colhead_dark {
+    border-bottom: 1px solid #ddd;
+  }
+
+  td {
+    line-height: 1.4em;
+    padding: 4px;
+  }
+
+  .sign {
+    width: 5%;
+  }
+
+  .colhead_dark td {
+    padding-top: 10px;
+  }
+
+  td.label {
+    text-align: right;
+  }
+
+  tr:hover td {
+    background: #eee;
+  }
+}
+
+#forums table tr:hover td {
+  background: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  line-height: 1.2em;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  height: 28px;
+}
+
+#header,
+#content,
+#footer {
+  clear: both;
+  float: none;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
