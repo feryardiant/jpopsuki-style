@@ -65,7 +65,7 @@
       display: block;
       margin: 0 0 10px;
       padding: 10px 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--border-color);
     }
   }
 
@@ -81,11 +81,11 @@
     font-size: 18px;
     margin: 0 0 10px;
     padding: 5px 0 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .forum_post {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
 
     td {
@@ -97,7 +97,7 @@
     }
 
     .body {
-      border-left: 1px solid #ddd;
+      border-left: 1px solid var(--border-color);
       width: 75%;
     }
 
@@ -109,13 +109,13 @@
     .signature {
       margin-top: 10px;
       padding-top: 10px;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
     }
   }
 
   .filter_torrents {
     .cat_list {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
       margin-top: 5px;
     }
 
@@ -124,7 +124,7 @@
     }
 
     .submit {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
       margin-top: 5px;
       padding-top: 5px;
     }
@@ -144,7 +144,7 @@
   }
 
   #reseed_box {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     padding: 10px;
 
     .head {
@@ -162,5 +162,5 @@
 }
 
 #forums .linkbox {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }

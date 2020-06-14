@@ -2,7 +2,16 @@
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @charset 'utf-8';
 :root {
-  --link-color: dddddd;
+  --border-color: #ddd;
+  --background-color: #fff;
+
+  --input-border-color: #ccc;
+  --input-background-color: #ddd;
+
+  --table-header-color: #eee;
+  --input-background-color: #fff;
+
+  --link-color: #396ea1;
   --footer-height: 220px;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -313,12 +322,12 @@ body {
 a {
   text-decoration: none;
   border: 0;
-  color: #396ea1;
+  color: var(--link-color);
 }
 blockquote {
   padding: 5px 15px;
   margin: 0;
-  border-left: 5px solid #ddd;
+  border-left: 5px solid var(--border-color);
   background-color: #f8f8f8;
 }
 ul a,
@@ -330,11 +339,11 @@ table {
   width: 100%;
 }
 table .colhead {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
+    background: var(--table-header-color);
+    border-bottom: 1px solid var(--border-color);
   }
 table .colhead_dark {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
   }
 table td {
     line-height: 1.4em;
@@ -360,7 +369,7 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border-color);
   line-height: 1.2em;
   padding: 4px;
   font-size: 12px;
@@ -567,7 +576,7 @@ select {
       display: block;
       margin: 0 0 10px;
       padding: 10px 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--border-color);
     }
 #content .box {
     width: 100%;
@@ -580,10 +589,10 @@ select {
     font-size: 18px;
     margin: 0 0 10px;
     padding: 5px 0 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
   }
 #content .forum_post {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
   }
 #content .forum_post td {
@@ -593,7 +602,7 @@ select {
       width: 25%;
     }
 #content .forum_post .body {
-      border-left: 1px solid #ddd;
+      border-left: 1px solid var(--border-color);
       width: 75%;
     }
 #content .forum_post .postcontent {
@@ -603,17 +612,17 @@ select {
 #content .forum_post .signature {
       margin-top: 10px;
       padding-top: 10px;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
     }
 #content .filter_torrents .cat_list {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
       margin-top: 5px;
     }
 #content .filter_torrents .cat_list td {
       padding-top: 5px;
     }
 #content .filter_torrents .submit {
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border-color);
       margin-top: 5px;
       padding-top: 5px;
     }
@@ -628,7 +637,7 @@ select {
     width: 70%;
   }
 #content #reseed_box {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     padding: 10px;
   }
 #content #reseed_box .head {
@@ -642,7 +651,7 @@ select {
       margin-top: 10px;
     }
 #forums .linkbox {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 .torrent_table {
   margin-left: 0.5px;
@@ -690,12 +699,16 @@ select {
 }
 #footer {
   background: #dedede;
-  padding: 15px 0;
+  padding: 15px 3rem;
   position: fixed;
   z-index: 1;
   bottom: 0;
   width: 100%;
+  height: var(--footer-height);
 }
+#footer #disclaimer_container {
+    line-height: 1.8em;
+  }
 #footer p {
     margin: 7px 0;
     font-size: 11px;

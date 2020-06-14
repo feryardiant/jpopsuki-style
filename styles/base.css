@@ -37,13 +37,13 @@ body {
 a {
   text-decoration: none;
   border: 0;
-  color: #396ea1;
+  color: var(--link-color);
 }
 
 blockquote {
   padding: 5px 15px;
   margin: 0;
-  border-left: 5px solid #ddd;
+  border-left: 5px solid var(--border-color);
   background-color: #f8f8f8;
 }
 
@@ -57,12 +57,12 @@ table {
   width: 100%;
 
   .colhead {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
+    background: var(--table-header-color);
+    border-bottom: 1px solid var(--border-color);
   }
 
   .colhead_dark {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
   }
 
   td {
@@ -96,7 +96,7 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border-color);
   line-height: 1.2em;
   padding: 4px;
   font-size: 12px;
