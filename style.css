@@ -384,8 +384,8 @@ table td.label {
 table tr:hover td {
     background: var(--table-header-color);
   }
-table img {
-    vertical-align: top;
+table .min_padding {
+    margin: 0;
   }
 #forums table tr:hover td {
   background: transparent;
