@@ -63,11 +63,19 @@ table {
   border-collapse: collapse;
   position: relative;
 
+  td {
+    font-weight: inherit;
+    line-height: 1.4em;
+    padding: 7px 4px;
+  }
+
   [class^=colhead],
   [class^=row],
   [class*=torrent] {
-    border-top: 1px solid var(--table-border-color);
-    border-bottom: 1px solid var(--table-border-color);
+    td {
+      border-top: 1px solid var(--table-border-color);
+      border-bottom: 1px solid var(--table-border-color);
+    }
   }
 
   .forum_group_header,
@@ -75,21 +83,13 @@ table {
     font-weight: 600;
   }
 
-  td {
-    line-height: 1.4em;
-    padding: 7px 4px;
-  }
-
-  [class^=colhead] {
+  [class^=colhead] td {
     background-color: var(--table-header-background-color);
-
-    td {
-      position: sticky;
-      top: 102px;
-    }
+    position: sticky;
+    top: 102px;
   }
 
-  .rowa {
+  .rowa td {
     background-color: var(--header-background-color);
   }
 

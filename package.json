@@ -10,13 +10,16 @@
   "bugs": {
     "url": "https://github.com/feryardiant/jpopsuki-style/issues"
   },
-  "main": "style.css",
-  "style": "style.css",
+  "directories": {
+    "lib": "styles"
+  },
+  "main": "styles/index.css",
+  "style": "public/style.css",
   "files": [
-    "LICENSE.md",
-    "style.css",
-    "style.min.css",
-    "style.src.css"
+    "LICENSE",
+    "public/style.css",
+    "public/style.min.css",
+    "styles/*.css"
   ],
   "scripts": {
     "build": "postcss styles/index.css > public/style.css",
