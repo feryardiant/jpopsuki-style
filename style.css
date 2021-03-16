@@ -695,6 +695,9 @@ input[type="submit"] {
 #forums .linkbox {
   border-bottom: 1px solid var(--border-color);
 }
+.filter_torrents {
+  padding-top: 10px;
+}
 .filter_torrents td {
     padding: 4px 10px;
   }
@@ -703,14 +706,13 @@ input[type="submit"] {
     display: inline-block;
     vertical-align: middle;
   }
+.filter_torrents .box {
+    margin-bottom: 10px;
+  }
 .filter_torrents .cat_list {
     border-top: 1px solid var(--border-color);
     margin-top: 10px;
   }
-.filter_torrents .cat_list td {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
 .filter_torrents .submit {
     border-top: 1px solid var(--border-color);
     padding-top: 10px;
