@@ -6,7 +6,8 @@
   --header-main-background-color: #dedede;
   --input-background-color: #ddd;
   --input-border-color: var(--border-color);
-  --table-header-background-color: #eee;
+  --table-header-background-color: #e1e1e1;
+  --table-row-background-color: #f6f6f6;
   --table-background-color: #fff;
   --table-border-color: var(--border-color);
   --link-color: #396ea1;
