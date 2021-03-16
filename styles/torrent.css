@@ -8,6 +8,7 @@
 
   tr {
     vertical-align: top;
+    border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
 
     &.colhead,
@@ -24,9 +25,6 @@
       top: 102px;
     }
 
-    /* &.group_torrent_redline {
-    } */
-
     &.group,
     &.torrent {
       background-color: #fff;
@@ -36,10 +34,9 @@
       background-color: #f8f8f8;
     }
 
-    &.group_redline,
-    &.torrent_redline,
-    &.group_torrent_redline {
+    &[class*=_redline] {
       background-color: #ffd2d2;
+      border-bottom-color: #d38c8c;
     }
 
     .center {
