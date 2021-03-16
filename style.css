@@ -523,15 +523,6 @@ table .min_padding {
     clear: both;
     display: table;
   }
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  background-color: var(--header-background-color);
-  min-width: var(--container-width);
-}
 #logo {
   position: absolute;
   top: 24px;
@@ -545,6 +536,38 @@ table .min_padding {
     display: block;
     background-size: 307px 60px;
   }
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--header-background-color);
+  min-width: var(--container-width);
+}
+#header a {
+    color: var(--header-link-color);
+  }
+#header a:hover,
+    #header a:active,
+    #header a:focus,
+    #header a:focus-visible {
+      text-decoration: none;
+      background-color: var(--header-link-hover-background-color);
+    }
+#header strong {
+    display: inline-block;
+  }
+#header ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+  }
+#header ul li {
+      float: left;
+      line-height: 2em;
+    }
 #userinfo,
 #searchbars {
   background: var(--header-main-background-color);
@@ -560,15 +583,6 @@ table .min_padding {
     clear: both;
     display: table;
   }
-#userinfo ul, #menu ul, #searchbars ul {
-    margin: 0;
-    padding: 0;
-    float: right;
-    list-style: none;
-  }
-#userinfo ul li, #menu ul li, #searchbars ul li {
-      float: left;
-    }
 #userinfo #userinfo_stats {
     float: left;
     color: #444;
@@ -597,24 +611,14 @@ table .min_padding {
     #searchbars input[type="text"]:focus-visible {
       border-color: var(--link-color);
     }
-#userinfo ul a,
-#userinfo #userinfo_stats li,
-#menu ul a {
-  display: block;
-  line-height: 2em;
-}
-#userinfo ul a,
+#userinfo ul a:link,
 #userinfo #userinfo_stats li {
   padding: 0 7px;
 }
-#menu ul a {
+#menu ul a:link {
   padding: 6px 13px;
 }
-#userinfo a:hover,
-#menu a:hover {
-  background: #d2d2d2;
-}
-#userinfo #userinfo_stats li a {
+#userinfo #userinfo_stats li a:link {
   padding: 0;
 }
 #userinfo > #userinfo_username {
