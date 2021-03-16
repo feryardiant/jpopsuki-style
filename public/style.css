@@ -1,16 +1,12 @@
-
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @charset 'utf-8';
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 :root {
   --border-color: #ddd;
   --background-color: #fff;
-
   --input-border-color: #ccc;
   --input-background-color: #ddd;
-
   --table-header-color: #eee;
-  --input-background-color: #fff;
-
+  --table-background-color: #fff;
   --link-color: #396ea1;
   --footer-height: 220px;
 }
@@ -54,7 +50,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -81,7 +78,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -204,7 +202,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -229,7 +228,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 /**
@@ -291,11 +291,13 @@ template {
 }
 /* Main */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 *::before,
   *::after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 html,
 body {
@@ -359,7 +361,7 @@ table td.label {
     text-align: right;
   }
 table tr:hover td {
-    background: #eee;
+    background: var(--table-header-color);
   }
 #forums table tr:hover td {
   background: transparent;
@@ -536,7 +538,7 @@ select {
   background: #b8e262;
 }
 #content {
-  background-color: #fff;
+  background-color: var(--background-color);
   position: relative;
   padding: 0 20px 20px;
   z-index: 2;
