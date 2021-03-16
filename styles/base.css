@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
+  color: var(--text-color);
   min-width: var(--container-width);
 }
 
@@ -45,6 +46,73 @@ a {
   color: var(--link-color);
   font-weight: inherit;
   font-size: inherit;
+  display: inline-block;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    filter: brightness(1.1);
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="button"],
+input[type="submit"],
+select,
+textarea {
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color);
+  line-height: 1.2em;
+  font-size: inherit;
+  border-radius: 3px;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="button"],
+input[type="submit"],
+select {
+  height: 28px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  padding: 2px 8px;
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: var(--link-color);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+  }
+}
+
+input[type="button"],
+input[type="submit"] {
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+  }
 }
 
 blockquote {
@@ -52,12 +120,6 @@ blockquote {
   margin: 0;
   border-left: 5px solid var(--border-color);
   background-color: #f8f8f8;
-}
-
-ul a,
-ol a,
-table a {
-  display: inline-block;
 }
 
 table {
@@ -108,49 +170,6 @@ table {
   .min_padding {
     margin: 0;
   }
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="button"],
-input[type="submit"],
-select {
-  height: 28px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="button"],
-input[type="submit"],
-select,
-textarea {
-  border: 1px solid var(--input-border-color);
-  background-color: var(--input-background-color);
-  line-height: 1.2em;
-  font-size: inherit;
-  border-radius: 3px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select,
-textarea {
-  padding: 2px 8px;
-
-  &:active,
-  &:focus,
-  &:focus-visible {
-    outline: none;
-    border-color: var(--link-color);
-  }
-}
-
-input[type="button"],
-input[type="submit"] {
-  padding: 2px 10px;
 }
 
 #header,
