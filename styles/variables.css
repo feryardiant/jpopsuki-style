@@ -3,28 +3,31 @@
   --background-color: #fff;
   --border-color: #c4c4c4;
   --text-color: #000;
-  --link-color: #61727c;
+  --link-color: #597e91;
   --header-background-color: #eee;
   --header-main-background-color: #dedede;
+  --header-link-color: var(--link-color);
+  --header-link-hover-background-color: rgb(217 217 217 / 50%);
   --input-background-color: #f3f3f3;
   --input-border-color: var(--border-color);
   --table-background-color: transparent;
   --table-header-background-color: var(--header-background-color);
-  --table-row-background-color: #f6f6f6;
+  --table-row-background-color: var(--header-link-hover-background-color);
   --table-border-color: var(--border-color);
   --footer-height: 220px;
 
   @media screen and (prefers-color-scheme: dark) {
     --background-color: #222;
     --border-color: #4c4c4c;
-    --text-color: #dadada;
-    --link-color: #597e91;
+    --text-color: #a9a9a9;
     --header-background-color: #353535;
     --header-main-background-color: #1f1f1f;
+    --header-link-color: var(--link-color);
+    --header-link-hover-background-color: rgb(80 80 80 / 50%);
     --input-background-color: #626262;
     --input-border-color: #8b8b8b;
     --table-header-background-color: var(--header-background-color);
-    --table-row-background-color: #f6f6f6;
+    --table-row-background-color: rgb(50 50 50 / 50%);
     --table-border-color: var(--border-color);
   }
 }
