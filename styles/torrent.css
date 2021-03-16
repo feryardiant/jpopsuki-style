@@ -1,7 +1,6 @@
 .filter_torrents {
   td {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 10px;
   }
 
   input[type="radio"],
@@ -12,7 +11,7 @@
 
   .cat_list {
     border-top: 1px solid var(--border-color);
-    margin-top: 5px;
+    margin-top: 10px;
 
     td {
       padding-top: 2px;
@@ -22,12 +21,12 @@
 
   .submit {
     border-top: 1px solid var(--border-color);
-    margin-top: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
 
     input[type="submit"],
     input[type="button"] {
       float: right;
+      margin: 0 3px;
     }
   }
 }
