@@ -154,6 +154,48 @@ blockquote {
   border-left: 5px solid var(--border-color);
 }
 
+span {
+  .size1 {
+    font-size: 0.75em;
+  }
+
+  .size2 {
+    font-size: 1em;
+  }
+
+  .size3 {
+    font-size: 1.25em;
+  }
+
+  .size4 {
+    font-size: 1.5em;
+  }
+
+  .size5 {
+    font-size: 1.75em;
+  }
+
+  .size6 {
+    font-size: 2em;
+  }
+
+  .size7 {
+    font-size: 2.25em;
+  }
+
+  .size8 {
+    font-size: 2.5em;
+  }
+
+  .size9 {
+    font-size: 2.75em;
+  }
+
+  .size10 {
+    font-size: 3em;
+  }
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
