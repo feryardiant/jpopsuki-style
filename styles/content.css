@@ -19,6 +19,7 @@
 }
 
 #content {
+  background-color: var(--background-color);
   position: relative;
   padding: 0 20px 20px;
   z-index: 2;
