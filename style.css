@@ -308,7 +308,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   min-width: var(--container-width);
 }
 body {
@@ -324,6 +324,9 @@ body {
 }
 .linkbox {
   padding: 10px 15px;
+}
+strong {
+  font-weight: 600;
 }
 a {
   text-decoration: none;
@@ -407,6 +410,7 @@ select {
   right: 0;
   z-index: 10;
   background-color: var(--header-background-color);
+  min-width: var(--container-width);
 }
 #logo {
   position: absolute;
@@ -661,26 +665,30 @@ select {
 }
 .torrent_table {
   margin-left: 0.5px;
+  position: relative;
 }
 .torrent_table div.tags {
     font-weight: normal;
   }
 .torrent_table tr {
     vertical-align: top;
+    border-bottom: 1px solid var(--table-border-color);
   }
 .torrent_table tr.colhead,
     .torrent_table tr.torrent,
     .torrent_table tr.group,
     .torrent_table tr.torrent_redline,
     .torrent_table tr.group_redline {
-      font-weight: bold;
+      font-weight: 600;
     }
 .torrent_table tr.colhead {
       background-color: var(--table-header-background-color);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 102px;
     }
-.torrent_table tr.group_torrent_redline {
-      border-bottom: 1px solid var(--table-border-color);
-    }
+/* &.group_torrent_redline {
+    } */
 .torrent_table tr.group,
     .torrent_table tr.torrent {
       background-color: #fff;
@@ -689,9 +697,9 @@ select {
       background-color: #f8f8f8;
     }
 .torrent_table tr.group_redline,
-    .torrent_table tr.group_torrent_redline,
-    .torrent_table tr.torrent_redline {
-      background-color: #fbf1f1;
+    .torrent_table tr.torrent_redline,
+    .torrent_table tr.group_torrent_redline {
+      background-color: #ffd2d2;
     }
 .torrent_table tr .center {
       vertical-align: middle;
