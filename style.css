@@ -585,7 +585,6 @@ table .min_padding {
   }
 #userinfo #userinfo_stats {
     float: left;
-    color: #444;
     border-left: 0;
   }
 #userinfo ul {
@@ -810,8 +809,14 @@ table .min_padding {
   }
 .torrent_table [class*=_redline] td {
     background-color: rgb(255 0 0 / 20%);
-    border-color: #d38c8c;
+    border-color: #e78d8d;
   }
+@media screen and (prefers-color-scheme: dark) {
+.torrent_table [class*=_redline] td {
+      background-color: rgb(255 50 50 / 15%);
+      border-color: #6a2222
+  }
+    }
 .torrent_table .center {
     vertical-align: middle;
     text-align: center;
