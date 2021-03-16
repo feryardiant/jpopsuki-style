@@ -61,7 +61,7 @@
 
   ul {
     padding: 0 5px;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid var(--border-color);
 
     li {
       font-size: 11px;
@@ -104,7 +104,7 @@
 }
 
 #menu ul a {
-  padding: 6px 14px;
+  padding: 6px 13px;
 }
 
 #userinfo a:hover,
