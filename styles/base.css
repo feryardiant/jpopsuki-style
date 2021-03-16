@@ -18,6 +18,7 @@ body {
 }
 
 body {
+  background-color: var(--background-color);
   padding-top: 96px;
   margin-bottom: var(--footer-height);
 }
@@ -52,6 +53,8 @@ a {
   &:active,
   &:focus,
   &:focus-visible {
+    outline: none;
+    text-decoration: underline;
     filter: brightness(1.1);
   }
 }
@@ -80,6 +83,15 @@ select {
   height: 28px;
 }
 
+input[type="button"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"],
+select,
+label {
+  cursor: pointer;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -99,7 +111,23 @@ textarea {
 input[type="button"],
 input[type="submit"] {
   padding: 2px 10px;
-  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  & + label {
+    cursor: pointer;
+    color: var(--link-color);
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+      filter: brightness(1.1);
+    }
+  }
 }
 
 input[type="button"],
@@ -163,8 +191,9 @@ table {
     padding-top: 10px;
   }
 
-  td.label {
+  .label {
     text-align: right;
+    cursor: default;
   }
 
   .min_padding {
