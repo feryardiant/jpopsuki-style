@@ -44,7 +44,7 @@
   }
 
   [class*=_redline] td {
-    background-color: #ffd2d2;
+    background-color: rgb(255 0 0 / 20%);
     border-color: #d38c8c;
   }
 
