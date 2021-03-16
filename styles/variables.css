@@ -1,13 +1,10 @@
 :root {
   --border-color: #ddd;
   --background-color: #fff;
-
   --input-border-color: #ccc;
   --input-background-color: #ddd;
-
   --table-header-color: #eee;
-  --input-background-color: #fff;
-
+  --table-background-color: #fff;
   --link-color: #396ea1;
   --footer-height: 220px;
 }

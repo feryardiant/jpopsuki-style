@@ -83,7 +83,7 @@ table {
   }
 
   tr:hover td {
-    background: #eee;
+    background: var(--table-header-color);
   }
 }
 
