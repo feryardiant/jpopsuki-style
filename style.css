@@ -356,12 +356,15 @@ table [class^=colhead],
     border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
   }
+table .forum_group_header,
+  table [class^=colhead] {
+    font-weight: 600;
+  }
 table td {
     line-height: 1.4em;
     padding: 7px 4px;
   }
 table [class^=colhead] {
-    font-weight: 600;
     background-color: var(--table-header-background-color);
   }
 table [class^=colhead] td {
