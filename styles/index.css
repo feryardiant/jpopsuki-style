@@ -11,3 +11,17 @@
 @import 'content.css';
 @import 'torrent.css';
 @import 'footer.css';
+
+body {
+  --footer-height: 130px;
+
+  &#index {
+    --footer-height: 220px;
+  }
+
+  margin-bottom: var(--footer-height);
+
+  #footer {
+    height: var(--footer-height);
+  }
+}
