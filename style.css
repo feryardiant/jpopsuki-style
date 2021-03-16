@@ -1,12 +1,16 @@
 @charset 'utf-8';
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 :root {
-  --border-color: #ddd;
+  --container-width: 1155px;
   --background-color: #fff;
-  --input-border-color: #ccc;
+  --border-color: #c4c4c4;
+  --header-background-color: #eee;
+  --header-main-background-color: #dedede;
   --input-background-color: #ddd;
-  --table-header-color: #eee;
+  --input-border-color: var(--border-color);
+  --table-header-background-color: #eee;
   --table-background-color: #fff;
+  --table-border-color: var(--border-color);
   --link-color: #396ea1;
   --footer-height: 220px;
 }
@@ -304,8 +308,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  min-width: 800px;
+  font-size: 14px;
+  min-width: var(--container-width);
 }
 body {
   padding-top: 96px;
@@ -339,6 +343,7 @@ table a {
 }
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 table .colhead {
     background: var(--table-header-color);
@@ -372,9 +377,10 @@ input[type="password"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color);
   line-height: 1.2em;
-  padding: 4px;
-  font-size: 12px;
+  padding: 2px 4px;
+  font-size: inherit;
   border-radius: 3px;
 }
 input[type="text"],
@@ -400,6 +406,7 @@ select {
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: var(--header-background-color);
 }
 #logo {
   position: absolute;
@@ -416,13 +423,13 @@ select {
   }
 #userinfo,
 #searchbars {
-  background: #ddd;
+  background: var(--header-main-background-color);
 }
 #userinfo,
 #menu,
 #searchbars {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
 }
 #userinfo::after, #menu::after, #searchbars::after {
     content: '';
@@ -438,9 +445,6 @@ select {
 #userinfo ul li, #menu ul li, #searchbars ul li {
       float: left;
     }
-#menu {
-  background: #eee;
-}
 #userinfo #userinfo_stats {
   float: left;
   color: #444;
@@ -664,15 +668,18 @@ select {
 .torrent_table tr {
     vertical-align: top;
   }
-.torrent_table tr.torrent,
+.torrent_table tr.colhead,
+    .torrent_table tr.torrent,
     .torrent_table tr.group,
     .torrent_table tr.torrent_redline,
     .torrent_table tr.group_redline {
       font-weight: bold;
     }
+.torrent_table tr.colhead {
+      background-color: var(--table-header-background-color);
+    }
 .torrent_table tr.group_torrent_redline {
-      border-bottom: 1px solid #fff;
-      border-top: 1px solid #fff;
+      border-bottom: 1px solid var(--table-border-color);
     }
 .torrent_table tr.group,
     .torrent_table tr.torrent {
@@ -700,7 +707,7 @@ select {
   float: right;
 }
 #footer {
-  background: #dedede;
+  background: var(--header-background-color);
   padding: 15px 3rem;
   position: fixed;
   z-index: 1;
