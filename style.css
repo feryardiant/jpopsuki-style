@@ -8,7 +8,8 @@
   --header-main-background-color: #dedede;
   --input-background-color: #ddd;
   --input-border-color: var(--border-color);
-  --table-header-background-color: #eee;
+  --table-header-background-color: #e1e1e1;
+  --table-row-background-color: #f6f6f6;
   --table-background-color: #fff;
   --table-border-color: var(--border-color);
   --link-color: #396ea1;
@@ -355,10 +356,12 @@ table td {
     line-height: 1.4em;
     padding: 7px 4px;
   }
-table [class^=colhead] td, table [class^=row] td, table [class*=torrent] td {
-      border-top: 1px solid var(--table-border-color);
-      border-bottom: 1px solid var(--table-border-color);
-    }
+table [class^=colhead] td,
+  table [class^=row] td,
+  table [class*=torrent] td {
+    border-top: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
+  }
 table .forum_group_header,
   table [class^=colhead] {
     font-weight: 600;
@@ -367,10 +370,10 @@ table [class^=colhead] td {
     background-color: var(--table-header-background-color);
     position: -webkit-sticky;
     position: sticky;
-    top: 102px;
+    top: 99px;
   }
 table .rowa td {
-    background-color: var(--header-background-color);
+    background-color: var(--table-row-background-color);
   }
 table .sign {
     width: 5%;
@@ -381,15 +384,9 @@ table .colhead_dark td {
 table td.label {
     text-align: right;
   }
-table tr:hover td {
-    background: var(--table-header-color);
-  }
 table .min_padding {
     margin: 0;
   }
-#forums table tr:hover td {
-  background: transparent;
-}
 input[type="text"],
 input[type="email"],
 input[type="password"],
