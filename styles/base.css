@@ -43,6 +43,8 @@ a {
   text-decoration: none;
   border: 0;
   color: var(--link-color);
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 blockquote {

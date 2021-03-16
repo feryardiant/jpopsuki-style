@@ -7,43 +7,19 @@
 
   tr {
     vertical-align: top;
-
-    &.colhead,
-    &.torrent,
-    &.group,
-    &.torrent_redline,
-    &.group_redline {
-      font-weight: 600;
-    }
-
-    &.group,
-    &.torrent {
-      background-color: #fff;
-    }
-
-    &.group_torrent {
-      background-color: #f8f8f8;
-    }
-
-    &[class*=_redline] {
-      background-color: #ffd2d2;
-      border-bottom-color: #d38c8c;
-    }
-
-    .center {
-      vertical-align: middle;
-      text-align: center;
-    }
   }
-}
 
-.group_torrent span,
-.group_torrent_redline span {
-  float: right;
-}
+  [class*=_redline] td {
+    background-color: #ffd2d2;
+    border-color: #d38c8c;
+  }
 
-.torrent span,
-.torrent_redline span {
-  font-weight: normal;
-  float: right;
+  .center {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  [class*=torrent] span {
+    float: right;
+  }
 }
