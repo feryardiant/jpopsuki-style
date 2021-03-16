@@ -12,8 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  min-width: 800px;
+  font-size: 14px;
+  min-width: var(--container-width);
 }
 
 body {
@@ -55,6 +55,7 @@ table a {
 
 table {
   width: 100%;
+  border-collapse: collapse;
 
   .colhead {
     background: var(--table-header-color);
@@ -97,9 +98,10 @@ input[type="password"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color)
   line-height: 1.2em;
-  padding: 4px;
-  font-size: 12px;
+  padding: 2px 4px;
+  font-size: inherit;
   border-radius: 3px;
 }
 

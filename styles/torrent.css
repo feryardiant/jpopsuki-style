@@ -8,6 +8,7 @@
   tr {
     vertical-align: top;
 
+    &.colhead,
     &.torrent,
     &.group,
     &.torrent_redline,
@@ -15,9 +16,12 @@
       font-weight: bold;
     }
 
+    &.colhead {
+      background-color: var(--table-header-background-color);
+    }
+
     &.group_torrent_redline {
-      border-bottom: 1px solid #fff;
-      border-top: 1px solid #fff;
+      border-bottom: 1px solid var(--table-border-color);
     }
 
     &.group,

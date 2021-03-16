@@ -1,10 +1,14 @@
 :root {
-  --border-color: #ddd;
+  --container-width: 1155px;
   --background-color: #fff;
-  --input-border-color: #ccc;
+  --border-color: #c4c4c4;
+  --header-background-color: #eee;
+  --header-main-background-color: #dedede;
   --input-background-color: #ddd;
-  --table-header-color: #eee;
+  --input-border-color: var(--border-color);
+  --table-header-background-color: #eee;
   --table-background-color: #fff;
+  --table-border-color: var(--border-color);
   --link-color: #396ea1;
   --footer-height: 220px;
 }

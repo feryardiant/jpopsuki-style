@@ -1,5 +1,5 @@
 #footer {
-  background: #dedede;
+  background: var(--header-background-color);
   padding: 15px 3rem;
   position: fixed;
   z-index: 1;
