@@ -16,7 +16,6 @@
   --table-header-background-color: var(--header-background-color);
   --table-row-background-color: var(--header-link-hover-background-color);
   --table-border-color: var(--border-color);
-  --footer-height: 220px;
 }
 @media screen and (prefers-color-scheme: dark) {
 :root {
@@ -335,7 +334,6 @@ body {
 body {
   background-color: var(--background-color);
   padding-top: 96px;
-  margin-bottom: var(--footer-height);
 }
 .hidden,
 .hide {
@@ -467,11 +465,14 @@ input[type="button"]:hover,
     -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
             box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
   }
+pre,
 blockquote {
-  padding: 5px 15px;
+  padding: 8px ​10p;
   margin: 0;
+  background-color: rgb(145 145 145 / 10%);
+}
+blockquote {
   border-left: 5px solid var(--border-color);
-  background-color: #f8f8f8;
 }
 table {
   width: 100%;
@@ -688,11 +689,11 @@ table .min_padding {
       margin-top: 2px;
       margin-bottom: 3px;
     }
-#content .poll .graph::after {
-      content: '';
-      clear: both;
-      display: table;
-    }
+#content .poll .graph ::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
 #content .stats li {
     padding: 0 0 1px 0;
   }
@@ -729,12 +730,17 @@ table .min_padding {
       padding: 10px 15px;
     }
 #content .forum_post .avatar {
-      width: 25%;
+      width: 20%;
     }
 #content .forum_post .body {
       border-left: 1px solid var(--border-color);
-      width: 75%;
+      line-height: 1.8em;
+      width: auto;
     }
+#content .forum_post .body img {
+        display: inline-block;
+        vertical-align: middle;
+      }
 #content .forum_post .postcontent {
       line-height: 1.6em;
       font-size: 1.1em;
@@ -831,7 +837,6 @@ table .min_padding {
   z-index: 1;
   bottom: 0;
   width: 100%;
-  height: var(--footer-height);
 }
 #footer #disclaimer_container {
     line-height: 1.8em;
@@ -841,4 +846,17 @@ table .min_padding {
     font-size: 11px;
     text-align: center;
     color: #666;
+  }
+body {
+  --footer-height: 130px;
+}
+body#index {
+    --footer-height: 220px;
+  }
+body{
+
+  margin-bottom: var(--footer-height);
+}
+body #footer {
+    height: var(--footer-height);
   }
