@@ -45,7 +45,12 @@
 
   [class*=_redline] td {
     background-color: rgb(255 0 0 / 20%);
-    border-color: #d38c8c;
+    border-color: #e78d8d;
+
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: rgb(255 50 50 / 15%);
+      border-color: #6a2222;
+    }
   }
 
   .center {
