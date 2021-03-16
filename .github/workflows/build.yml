@@ -43,7 +43,7 @@ jobs:
         cp .gitignore public/
 
     - name: Deploy
-      if: github.event_name == 'push' && github.ref == 'refs/heads/source'
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@4.1.0
       with:
         token: ${{ secrets.PAT }}
