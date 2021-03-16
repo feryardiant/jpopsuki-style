@@ -70,13 +70,17 @@ table {
     border-bottom: 1px solid var(--table-border-color);
   }
 
+  .forum_group_header,
+  [class^=colhead] {
+    font-weight: 600;
+  }
+
   td {
     line-height: 1.4em;
     padding: 7px 4px;
   }
 
   [class^=colhead] {
-    font-weight: 600;
     background-color: var(--table-header-background-color);
 
     td {
