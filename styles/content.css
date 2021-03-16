@@ -113,23 +113,6 @@
     }
   }
 
-  .filter_torrents {
-    .cat_list {
-      border-top: 1px solid var(--border-color);
-      margin-top: 5px;
-    }
-
-    .cat_list td {
-      padding-top: 5px;
-    }
-
-    .submit {
-      border-top: 1px solid var(--border-color);
-      margin-top: 5px;
-      padding-top: 5px;
-    }
-  }
-
   .sidebar {
     width: 30%;
     float: right;

@@ -80,10 +80,15 @@
 
   input[type="text"] {
     border-color: transparent;
-    padding: 2px 9px;
     font-size: 11px;
     line-height: 1.8em;
     margin-right: 5px;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      border-color: var(--link-color);
+    }
   }
 }
 
