@@ -32,6 +32,7 @@ body {
 
 .linkbox {
   padding: 10px 15px;
+  font-weight: 600;
 }
 
 strong {
@@ -60,19 +61,27 @@ table a {
 table {
   width: 100%;
   border-collapse: collapse;
+  position: relative;
 
-  .colhead {
-    background: var(--table-header-color);
-    border-bottom: 1px solid var(--border-color);
-  }
+  tr {
+    border-top: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
 
-  .colhead_dark {
-    border-bottom: 1px solid var(--border-color);
+    &[class^=colhead] {
+      font-weight: 600;
+      background-color: var(--table-header-background-color);
+      position: sticky;
+      top: 102px;
+    }
+
+    &.rowa {
+      background-color: var(--header-background-color);
+    }
   }
 
   td {
     line-height: 1.4em;
-    padding: 4px;
+    padding: 7px 4px;
   }
 
   .sign {
@@ -99,6 +108,13 @@ table {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+select {
+  height: 28px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
@@ -107,13 +123,13 @@ textarea {
   padding: 2px 4px;
   font-size: inherit;
   border-radius: 3px;
-}
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-  height: 28px;
+  &:active,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: var(--link-color);
+  }
 }
 
 #header,

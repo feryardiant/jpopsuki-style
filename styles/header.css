@@ -52,18 +52,20 @@
   }
 }
 
-#userinfo #userinfo_stats {
-  float: left;
-  color: #444;
-  border-left: 0;
-}
+#userinfo {
+  #userinfo_stats {
+    float: left;
+    color: #444;
+    border-left: 0;
+  }
 
-#userinfo ul {
-  padding: 0 5px;
-  border-left: 1px solid #ccc;
+  ul {
+    padding: 0 5px;
+    border-left: 1px solid #ccc;
 
-  li {
-    font-size: 11px;
+    li {
+      font-size: 11px;
+    }
   }
 }
 
@@ -77,18 +79,11 @@
   }
 
   input[type="text"] {
-    border: 1px solit transparent;
+    border-color: transparent;
     padding: 2px 9px;
     font-size: 11px;
     line-height: 1.8em;
-    background: #ccc;
     margin-right: 5px;
-
-    &:focus,
-    &:active {
-      outline: 0;
-      border-color: var(--link-color);
-    }
   }
 }
 

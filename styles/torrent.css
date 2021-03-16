@@ -1,6 +1,5 @@
 .torrent_table {
   margin-left: 0.5px;
-  position: relative;
 
   div.tags {
     font-weight: normal;
@@ -8,8 +7,6 @@
 
   tr {
     vertical-align: top;
-    border-top: 1px solid var(--table-border-color);
-    border-bottom: 1px solid var(--table-border-color);
 
     &.colhead,
     &.torrent,
@@ -17,12 +14,6 @@
     &.torrent_redline,
     &.group_redline {
       font-weight: 600;
-    }
-
-    &.colhead {
-      background-color: var(--table-header-background-color);
-      position: sticky;
-      top: 102px;
     }
 
     &.group,
