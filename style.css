@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 :root {
-  --container-width: 1135px;
+  --container-width: 1130px;
   --background-color: #fff;
   --border-color: #c4c4c4;
   --header-background-color: #eee;
@@ -334,6 +334,8 @@ a {
   text-decoration: none;
   border: 0;
   color: var(--link-color);
+  font-weight: inherit;
+  font-size: inherit;
 }
 blockquote {
   padding: 5px 15px;
@@ -697,37 +699,17 @@ input[type="text"]:active,
 .torrent_table tr {
     vertical-align: top;
   }
-.torrent_table tr.colhead,
-    .torrent_table tr.torrent,
-    .torrent_table tr.group,
-    .torrent_table tr.torrent_redline,
-    .torrent_table tr.group_redline {
-      font-weight: 600;
-    }
-.torrent_table tr.group,
-    .torrent_table tr.torrent {
-      background-color: #fff;
-    }
-.torrent_table tr.group_torrent {
-      background-color: #f8f8f8;
-    }
-.torrent_table tr[class*=_redline] {
-      background-color: #ffd2d2;
-      border-bottom-color: #d38c8c;
-    }
-.torrent_table tr .center {
-      vertical-align: middle;
-      text-align: center;
-    }
-.group_torrent span,
-.group_torrent_redline span {
-  float: right;
-}
-.torrent span,
-.torrent_redline span {
-  font-weight: normal;
-  float: right;
-}
+.torrent_table [class*=_redline] td {
+    background-color: #ffd2d2;
+    border-color: #d38c8c;
+  }
+.torrent_table .center {
+    vertical-align: middle;
+    text-align: center;
+  }
+.torrent_table [class*=torrent] span {
+    float: right;
+  }
 #footer {
   background: var(--header-background-color);
   padding: 15px 3rem;
