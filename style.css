@@ -6,7 +6,7 @@
   --border-color: #c4c4c4;
   --header-background-color: #eee;
   --header-main-background-color: #dedede;
-  --input-background-color: #ddd;
+  --input-background-color: #f3f3f3;
   --input-border-color: var(--border-color);
   --table-header-background-color: #e1e1e1;
   --table-row-background-color: #f6f6f6;
@@ -392,12 +392,16 @@ table .min_padding {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="button"],
+input[type="submit"],
 select {
   height: 28px;
 }
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="button"],
+input[type="submit"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
@@ -416,6 +420,12 @@ input[type="text"]:active,
   input[type="password"]:active,
   input[type="password"]:focus,
   input[type="password"]:focus-visible,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="button"]:focus-visible,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="submit"]:focus-visible,
   select:active,
   select:focus,
   select:focus-visible,
