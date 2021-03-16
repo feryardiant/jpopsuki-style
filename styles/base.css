@@ -48,6 +48,7 @@ a {
   font-weight: inherit;
   font-size: inherit;
   display: inline-block;
+  line-height: inherit;
 
   &:hover,
   &:active,
