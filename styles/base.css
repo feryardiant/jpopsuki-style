@@ -187,10 +187,6 @@ table {
     width: 5%;
   }
 
-  .colhead_dark td {
-    padding-top: 10px;
-  }
-
   .label {
     text-align: right;
     cursor: default;
