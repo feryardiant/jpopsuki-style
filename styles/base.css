@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   min-width: var(--container-width);
 }
 
@@ -32,6 +32,10 @@ body {
 
 .linkbox {
   padding: 10px 15px;
+}
+
+strong {
+  font-weight: 600;
 }
 
 a {

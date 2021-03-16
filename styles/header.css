@@ -5,6 +5,7 @@
   right: 0;
   z-index: 10;
   background-color: var(--header-background-color);
+  min-width: var(--container-width);
 }
 
 #logo {
