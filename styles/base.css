@@ -63,25 +63,30 @@ table {
   border-collapse: collapse;
   position: relative;
 
-  tr {
+  [class^=colhead],
+  [class^=row],
+  [class*=torrent] {
     border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
-
-    &[class^=colhead] {
-      font-weight: 600;
-      background-color: var(--table-header-background-color);
-      position: sticky;
-      top: 102px;
-    }
-
-    &.rowa {
-      background-color: var(--header-background-color);
-    }
   }
 
   td {
     line-height: 1.4em;
     padding: 7px 4px;
+  }
+
+  [class^=colhead] {
+    font-weight: 600;
+    background-color: var(--table-header-background-color);
+
+    td {
+      position: sticky;
+      top: 102px;
+    }
+  }
+
+  .rowa {
+    background-color: var(--header-background-color);
   }
 
   .sign {
@@ -98,6 +103,10 @@ table {
 
   tr:hover td {
     background: var(--table-header-color);
+  }
+
+  img {
+    vertical-align: top;
   }
 }
 
