@@ -1,0 +1,52 @@
+name: GitHub Page
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/build.yml
+      - styles/*
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Setup Node.JS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Cache Dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Generate
+      run: |
+        npm run lint
+        npm run build
+        npm run minify
+        cp .gitignore public/
+
+    - name: Deploy
+      if: github.event_name == 'push' && github.ref == 'refs/heads/source'
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        token: ${{ secrets.PAT }}
+        commit-message: 'publish: generate github pages'
+        branch: gh-pages
+        folder: 'public'
