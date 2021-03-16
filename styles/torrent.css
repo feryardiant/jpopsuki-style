@@ -1,4 +1,6 @@
 .filter_torrents {
+  padding-top: 10px;
+
   td {
     padding: 4px 10px;
   }
@@ -9,14 +11,13 @@
     vertical-align: middle;
   }
 
+  .box {
+    margin-bottom: 10px;
+  }
+
   .cat_list {
     border-top: 1px solid var(--border-color);
     margin-top: 10px;
-
-    td {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
   }
 
   .submit {
