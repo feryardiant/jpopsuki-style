@@ -42,12 +42,12 @@
     .graph {
       margin-top: 2px;
       margin-bottom: 3px;
-    }
 
-    .graph::after {
-      content: '';
-      clear: both;
-      display: table;
+      ::after {
+        content: '';
+        clear: both;
+        display: table;
+      }
     }
   }
 
@@ -93,12 +93,19 @@
     }
 
     .avatar {
-      width: 25%;
+      width: 20%;
     }
 
     .body {
       border-left: 1px solid var(--border-color);
-      width: 75%;
+      line-height: 1.8em;
+      width: auto;
+
+      img {
+        vertical-align: middle;
+        display: inline-block;
+        vertical-align: middle;
+      }
     }
 
     .postcontent {
