@@ -515,7 +515,6 @@ input[type="submit"] {
       padding: 5px 0;
     }
 #searchbars input[type="text"] {
-    border-color: transparent;
     font-size: 11px;
     line-height: 1.8em;
     margin-right: 5px;
@@ -697,8 +696,7 @@ input[type="submit"] {
   border-bottom: 1px solid var(--border-color);
 }
 .filter_torrents td {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 10px;
   }
 .filter_torrents input[type="radio"],
   .filter_torrents input[type="checkbox"] {
@@ -707,7 +705,7 @@ input[type="submit"] {
   }
 .filter_torrents .cat_list {
     border-top: 1px solid var(--border-color);
-    margin-top: 5px;
+    margin-top: 10px;
   }
 .filter_torrents .cat_list td {
       padding-top: 2px;
@@ -715,12 +713,12 @@ input[type="submit"] {
     }
 .filter_torrents .submit {
     border-top: 1px solid var(--border-color);
-    margin-top: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 .filter_torrents .submit input[type="submit"],
     .filter_torrents .submit input[type="button"] {
       float: right;
+      margin: 0 3px;
     }
 .torrent_table {
   margin-left: 0.5px;
