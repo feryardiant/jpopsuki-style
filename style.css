@@ -350,29 +350,26 @@ table {
   border-collapse: collapse;
   position: relative;
 }
-table [class^=colhead],
-  table [class^=row],
-  table [class*=torrent] {
-    border-top: 1px solid var(--table-border-color);
-    border-bottom: 1px solid var(--table-border-color);
+table td {
+    font-weight: inherit;
+    line-height: 1.4em;
+    padding: 7px 4px;
   }
+table [class^=colhead] td, table [class^=row] td, table [class*=torrent] td {
+      border-top: 1px solid var(--table-border-color);
+      border-bottom: 1px solid var(--table-border-color);
+    }
 table .forum_group_header,
   table [class^=colhead] {
     font-weight: 600;
   }
-table td {
-    line-height: 1.4em;
-    padding: 7px 4px;
-  }
-table [class^=colhead] {
-    background-color: var(--table-header-background-color);
-  }
 table [class^=colhead] td {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 102px;
-    }
-table .rowa {
+    background-color: var(--table-header-background-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 102px;
+  }
+table .rowa td {
     background-color: var(--header-background-color);
   }
 table .sign {
