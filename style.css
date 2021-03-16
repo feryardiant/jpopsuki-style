@@ -324,6 +324,7 @@ body {
 }
 .linkbox {
   padding: 10px 15px;
+  font-weight: 600;
 }
 strong {
   font-weight: 600;
@@ -347,17 +348,25 @@ table a {
 table {
   width: 100%;
   border-collapse: collapse;
+  position: relative;
 }
-table .colhead {
-    background: var(--table-header-color);
-    border-bottom: 1px solid var(--border-color);
+table tr {
+    border-top: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
   }
-table .colhead_dark {
-    border-bottom: 1px solid var(--border-color);
-  }
+table tr[class^=colhead] {
+      font-weight: 600;
+      background-color: var(--table-header-background-color);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 102px;
+    }
+table tr.rowa {
+      background-color: var(--header-background-color);
+    }
 table td {
     line-height: 1.4em;
-    padding: 4px;
+    padding: 7px 4px;
   }
 table .sign {
     width: 5%;
@@ -377,6 +386,12 @@ table tr:hover td {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+select {
+  height: 28px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
@@ -386,12 +401,24 @@ textarea {
   font-size: inherit;
   border-radius: 3px;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-  height: 28px;
-}
+input[type="text"]:active,
+  input[type="text"]:focus,
+  input[type="text"]:focus-visible,
+  input[type="email"]:active,
+  input[type="email"]:focus,
+  input[type="email"]:focus-visible,
+  input[type="password"]:active,
+  input[type="password"]:focus,
+  input[type="password"]:focus-visible,
+  select:active,
+  select:focus,
+  select:focus-visible,
+  textarea:active,
+  textarea:focus,
+  textarea:focus-visible {
+    outline: none;
+    border-color: var(--link-color);
+  }
 #header,
 #content,
 #footer {
@@ -450,17 +477,17 @@ select {
       float: left;
     }
 #userinfo #userinfo_stats {
-  float: left;
-  color: #444;
-  border-left: 0;
-}
-#userinfo ul {
-  padding: 0 5px;
-  border-left: 1px solid #ccc;
-}
-#userinfo ul li {
-    font-size: 11px;
+    float: left;
+    color: #444;
+    border-left: 0;
   }
+#userinfo ul {
+    padding: 0 5px;
+    border-left: 1px solid #ccc;
+  }
+#userinfo ul li {
+      font-size: 11px;
+    }
 #searchbars ul {
     margin-right: 10px;
   }
@@ -468,18 +495,12 @@ select {
       padding: 5px 0;
     }
 #searchbars input[type="text"] {
-    border: 1px solit transparent;
+    border-color: transparent;
     padding: 2px 9px;
     font-size: 11px;
     line-height: 1.8em;
-    background: #ccc;
     margin-right: 5px;
   }
-#searchbars input[type="text"]:focus,
-    #searchbars input[type="text"]:active {
-      outline: 0;
-      border-color: var(--link-color);
-    }
 #userinfo ul a,
 #userinfo #userinfo_stats li,
 #menu ul a {
@@ -665,15 +686,12 @@ select {
 }
 .torrent_table {
   margin-left: 0.5px;
-  position: relative;
 }
 .torrent_table div.tags {
     font-weight: normal;
   }
 .torrent_table tr {
     vertical-align: top;
-    border-top: 1px solid var(--table-border-color);
-    border-bottom: 1px solid var(--table-border-color);
   }
 .torrent_table tr.colhead,
     .torrent_table tr.torrent,
@@ -681,12 +699,6 @@ select {
     .torrent_table tr.torrent_redline,
     .torrent_table tr.group_redline {
       font-weight: 600;
-    }
-.torrent_table tr.colhead {
-      background-color: var(--table-header-background-color);
-      position: -webkit-sticky;
-      position: sticky;
-      top: 102px;
     }
 .torrent_table tr.group,
     .torrent_table tr.torrent {
