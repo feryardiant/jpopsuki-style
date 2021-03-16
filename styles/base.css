@@ -98,7 +98,7 @@ input[type="password"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
-  background-color: var(--input-background-color)
+  background-color: var(--input-background-color);
   line-height: 1.2em;
   padding: 2px 4px;
   font-size: inherit;
