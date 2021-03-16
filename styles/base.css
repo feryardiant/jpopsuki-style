@@ -105,8 +105,8 @@ table {
     background: var(--table-header-color);
   }
 
-  img {
-    vertical-align: top;
+  .min_padding {
+    margin: 0;
   }
 }
 
