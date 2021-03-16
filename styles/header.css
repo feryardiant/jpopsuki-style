@@ -16,7 +16,7 @@
 
   a {
     width: 307px;
-    background: url(logo.png) no-repeat;
+    background: url('logo.png') no-repeat;
     height: 60px;
     display: block;
     background-size: 307px 60px;
