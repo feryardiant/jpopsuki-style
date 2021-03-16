@@ -19,6 +19,7 @@ Desktop.ini
 # Developments
 # --------------------------
 node_modules
+public/*.css
 
 # But Keep these
 # --------------------------
