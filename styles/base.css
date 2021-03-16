@@ -113,6 +113,8 @@ table {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="button"],
+input[type="submit"],
 select {
   height: 28px;
 }
@@ -120,6 +122,8 @@ select {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="button"],
+input[type="submit"],
 select,
 textarea {
   border: 1px solid var(--input-border-color);
