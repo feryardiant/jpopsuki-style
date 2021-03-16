@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 :root {
-  --container-width: 1155px;
+  --container-width: 1135px;
   --background-color: #fff;
   --border-color: #c4c4c4;
   --header-background-color: #eee;
@@ -672,6 +672,7 @@ select {
   }
 .torrent_table tr {
     vertical-align: top;
+    border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
   }
 .torrent_table tr.colhead,
@@ -687,8 +688,6 @@ select {
       position: sticky;
       top: 102px;
     }
-/* &.group_torrent_redline {
-    } */
 .torrent_table tr.group,
     .torrent_table tr.torrent {
       background-color: #fff;
@@ -696,10 +695,9 @@ select {
 .torrent_table tr.group_torrent {
       background-color: #f8f8f8;
     }
-.torrent_table tr.group_redline,
-    .torrent_table tr.torrent_redline,
-    .torrent_table tr.group_torrent_redline {
+.torrent_table tr[class*=_redline] {
       background-color: #ffd2d2;
+      border-bottom-color: #d38c8c;
     }
 .torrent_table tr .center {
       vertical-align: middle;
