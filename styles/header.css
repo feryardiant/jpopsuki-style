@@ -24,14 +24,14 @@
 
   a {
     color: var(--header-link-color);
+  }
 
-    &:hover,
-    &:active,
-    &:focus,
-    &:focus-visible {
-      text-decoration: none;
-      background-color: var(--header-link-hover-background-color);
-    }
+  a:hover,
+  a:active,
+  a:focus,
+  a:focus-visible {
+    text-decoration: none;
+    background-color: var(--header-link-hover-background-color);
   }
 
   strong {
@@ -43,11 +43,11 @@
     padding: 0;
     float: right;
     list-style: none;
+  }
 
-    li {
-      float: left;
-      line-height: 2em;
-    }
+  li {
+    float: left;
+    line-height: 2em;
   }
 }
 
@@ -70,28 +70,56 @@
 }
 
 #userinfo {
-  #userinfo_stats {
-    float: left;
-    border-left: 0;
-  }
-
   ul {
     padding: 0 5px;
     border-left: 1px solid var(--border-color);
 
-    li {
-      font-size: 11px;
+    &#userinfo_stats {
+      float: left;
+      border-left: 0;
     }
+  }
+
+  li {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  a:link {
+    padding: 0 7px;
+  }
+
+  > #userinfo_username {
+    float: right;
+  }
+}
+
+#menu {
+  a:link {
+    padding: 6px 13px;
+  }
+
+  #index & #nav_index a:link,
+  #torrents & #nav_torrents a:link,
+  #requests & #nav_requests a:link,
+  #forums & #nav_forums a:link,
+  #top10 & #nav_top10 a:link,
+  #rules & #nav_rules a:link,
+  #staff & #nav_staff a:link,
+  #chat & #nav_irc a:link,
+  #wiki & #nav_wiki a:link,
+  #collage & #nav_collages a:link {
+    background-color: var(--header-link-hover-background-color);
   }
 }
 
 #searchbars {
   ul {
     margin-right: 10px;
+  }
 
-    li {
-      padding: 5px 0;
-    }
+  li {
+    padding: 5px 0;
   }
 
   input[type="text"] {
@@ -105,21 +133,4 @@
       border-color: var(--link-color);
     }
   }
-}
-
-#userinfo ul a:link,
-#userinfo #userinfo_stats li {
-  padding: 0 7px;
-}
-
-#menu ul a:link {
-  padding: 6px 13px;
-}
-
-#userinfo #userinfo_stats li a:link {
-  padding: 0;
-}
-
-#userinfo > #userinfo_username {
-  float: right;
 }
