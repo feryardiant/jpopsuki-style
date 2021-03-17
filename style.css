@@ -603,7 +603,6 @@ table .min_padding {
   #header a:focus,
   #header a:focus-visible {
     text-decoration: none;
-    background-color: var(--header-link-hover-background-color);
   }
 #header strong {
     display: inline-block;
@@ -654,19 +653,23 @@ table .min_padding {
 #menu a:link {
     padding: 6px 13px;
   }
-#index #menu #nav_index a:link,
-  #torrents #menu #nav_torrents a:link,
-  #artists #menu #nav_artists a:link,
-  #requests #menu #nav_requests a:link,
-  #collages #menu #nav_collages a:link,
-  #forums #menu #nav_forums a:link,
-  #top10 #menu #nav_top10 a:link,
-  #rules #menu #nav_rules a:link,
-  #staff #menu #nav_staff a:link,
-  #irc #menu #nav_irc a:link,
-  #streaming #menu #nav_tv a:link,
-  #wiki #menu #nav_wiki a:link,
-  #kb2 #menu #nav_kb a:link {
+#menu a:hover,
+  #menu a:active,
+  #menu a:focus,
+  #menu a:focus-visible,
+  #index #menu #nav_index a,
+  #torrents #menu #nav_torrents a,
+  #artists #menu #nav_artists a,
+  #requests #menu #nav_requests a,
+  #collages #menu #nav_collages a,
+  #forums #menu #nav_forums a,
+  #top10 #menu #nav_top10 a,
+  #rules #menu #nav_rules a,
+  #staff #menu #nav_staff a,
+  #irc #menu #nav_irc a,
+  #streaming #menu #nav_tv a,
+  #wiki #menu #nav_wiki a,
+  #kb2 #menu #nav_kb a {
     background-color: var(--header-link-hover-background-color);
   }
 #searchbars ul {
