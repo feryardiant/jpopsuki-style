@@ -750,7 +750,7 @@ table .min_padding {
       margin-top: 2px;
       margin-bottom: 3px;
     }
-#content .poll .graph ::after {
+#content .poll .graph::after {
         content: '';
         clear: both;
         display: table;
@@ -783,6 +783,12 @@ table .min_padding {
     padding: 5px 0 10px;
     border-bottom: 1px solid var(--border-color);
   }
+#content .pad img,
+  #content .body img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 #content .forum_post {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
@@ -798,11 +804,6 @@ table .min_padding {
       line-height: 1.8em;
       width: auto;
     }
-#content .forum_post .body img {
-        max-width: 100%;
-        display: inline-block;
-        vertical-align: middle;
-      }
 #content .forum_post .postcontent {
       line-height: 1.6em;
       font-size: 1.1em;
@@ -821,6 +822,9 @@ table .min_padding {
     }
 #content .main_column {
     width: 70%;
+  }
+#content #images td {
+    vertical-align: top;
   }
 #content #reseed_box {
     border: 1px solid var(--border-color);
@@ -913,7 +917,7 @@ body {
   --footer-height: 130px;
 }
 body#index {
-    --footer-height: 220px;
+    --footer-height: 240px;
   }
 body{
 
