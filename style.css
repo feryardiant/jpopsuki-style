@@ -793,6 +793,7 @@ table .min_padding {
       width: auto;
     }
 #content .forum_post .body img {
+        max-width: 100%;
         display: inline-block;
         vertical-align: middle;
       }
