@@ -146,7 +146,7 @@ input[type="checkbox"] {
 pre,
 blockquote {
   color: inherit !important;
-  padding: 8px 10px;
+  padding: 8px 0 8px 10px;
   margin: 0;
   background-color: rgb(145 145 145 / 10%);
 }
@@ -221,6 +221,7 @@ table {
 
   [class^=colhead] td {
     background-color: var(--table-header-background-color);
+    backdrop-filter: blur(1.5rem);
     position: sticky;
     top: 99px;
   }
@@ -256,6 +257,7 @@ table {
 
   &,
   img {
+    cursor: pointer;
     width: 100%;
     text-align: center;
   }
