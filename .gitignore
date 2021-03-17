@@ -18,6 +18,7 @@ Desktop.ini
 
 # Developments
 # --------------------------
+*.afdesign
 node_modules
 public/*.css
 
