@@ -6,8 +6,8 @@
   --border-color: #c4c4c4;
   --text-color: #000;
   --link-color: #597e91;
-  --header-background-color: #eee;
-  --header-main-background-color: #dedede;
+  --header-background-color: rgb(230 230 230 / 50%);
+  --header-main-background-color: rgb(203 203 203 / 50%);
   --header-link-color: var(--link-color);
   --header-link-hover-background-color: rgb(217 217 217 / 50%);
   --input-background-color: #f3f3f3;
@@ -22,15 +22,12 @@
     --background-color: #222;
     --border-color: #4c4c4c;
     --text-color: #a9a9a9;
-    --header-background-color: #353535;
-    --header-main-background-color: #1f1f1f;
-    --header-link-color: var(--link-color);
+    --header-background-color: rgb(53 53 53 / 50%);
+    --header-main-background-color: rgb(31 31 31 / 50%);
     --header-link-hover-background-color: rgb(80 80 80 / 50%);
     --input-background-color: #626262;
     --input-border-color: #8b8b8b;
-    --table-header-background-color: var(--header-background-color);
-    --table-row-background-color: rgb(50 50 50 / 50%);
-    --table-border-color: var(--border-color)
+    --table-row-background-color: rgb(50 50 50 / 50%)
 }
   }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -518,7 +515,6 @@ table td {
 table [class^=colhead] td,
   table [class^=row] td,
   table [class*=torrent] td {
-    border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
   }
 table .forum_group_header,
@@ -553,6 +549,8 @@ table .min_padding {
   padding: 24px;
   height: 100vh;
   background-color: rgb(0 0 0 / 60%);
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
 }
 #lightbox,
   #lightbox img {
@@ -590,6 +588,8 @@ table .min_padding {
   right: 0;
   z-index: 10;
   background-color: var(--header-background-color);
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
   min-width: var(--container-width);
 }
 #header a {
