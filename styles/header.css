@@ -32,7 +32,6 @@
   a:focus,
   a:focus-visible {
     text-decoration: none;
-    background-color: var(--header-link-hover-background-color);
   }
 
   strong {
@@ -100,19 +99,23 @@
     padding: 6px 13px;
   }
 
-  #index & #nav_index a:link,
-  #torrents & #nav_torrents a:link,
-  #artists & #nav_artists a:link,
-  #requests & #nav_requests a:link,
-  #collages & #nav_collages a:link,
-  #forums & #nav_forums a:link,
-  #top10 & #nav_top10 a:link,
-  #rules & #nav_rules a:link,
-  #staff & #nav_staff a:link,
-  #irc & #nav_irc a:link,
-  #streaming & #nav_tv a:link,
-  #wiki & #nav_wiki a:link,
-  #kb2 & #nav_kb a:link {
+  a:hover,
+  a:active,
+  a:focus,
+  a:focus-visible,
+  #index & #nav_index a,
+  #torrents & #nav_torrents a,
+  #artists & #nav_artists a,
+  #requests & #nav_requests a,
+  #collages & #nav_collages a,
+  #forums & #nav_forums a,
+  #top10 & #nav_top10 a,
+  #rules & #nav_rules a,
+  #staff & #nav_staff a,
+  #irc & #nav_irc a,
+  #streaming & #nav_tv a,
+  #wiki & #nav_wiki a,
+  #kb2 & #nav_kb a {
     background-color: var(--header-link-hover-background-color);
   }
 }
