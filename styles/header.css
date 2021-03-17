@@ -101,14 +101,17 @@
 
   #index & #nav_index a:link,
   #torrents & #nav_torrents a:link,
+  #artists & #nav_artists a:link,
   #requests & #nav_requests a:link,
+  #collages & #nav_collages a:link,
   #forums & #nav_forums a:link,
   #top10 & #nav_top10 a:link,
   #rules & #nav_rules a:link,
   #staff & #nav_staff a:link,
-  #chat & #nav_irc a:link,
+  #irc & #nav_irc a:link,
+  #streaming & #nav_tv a:link,
   #wiki & #nav_wiki a:link,
-  #collage & #nav_collages a:link {
+  #kb2 & #nav_kb a:link {
     background-color: var(--header-link-hover-background-color);
   }
 }
