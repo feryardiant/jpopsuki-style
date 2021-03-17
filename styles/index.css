@@ -16,7 +16,7 @@ body {
   --footer-height: 130px;
 
   &#index {
-    --footer-height: 220px;
+    --footer-height: 240px;
   }
 
   margin-bottom: var(--footer-height);

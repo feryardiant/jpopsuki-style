@@ -43,7 +43,7 @@
       margin-top: 2px;
       margin-bottom: 3px;
 
-      ::after {
+      &::after {
         content: '';
         clear: both;
         display: table;
@@ -84,6 +84,13 @@
     border-bottom: 1px solid var(--border-color);
   }
 
+  .pad img,
+  .body img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .forum_post {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 0;
@@ -100,12 +107,6 @@
       border-left: 1px solid var(--border-color);
       line-height: 1.8em;
       width: auto;
-
-      img {
-        max-width: 100%;
-        display: inline-block;
-        vertical-align: middle;
-      }
     }
 
     .postcontent {
@@ -131,6 +132,10 @@
 
   .main_column {
     width: 70%;
+  }
+
+  #images td {
+    vertical-align: top;
   }
 
   #reseed_box {
