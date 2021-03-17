@@ -245,16 +245,19 @@ table {
 }
 
 #lightbox {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  width: 100%;
   padding: 24px;
+  height: 100vh;
   background-color: rgb(0 0 0 / 60%);
 
+  &,
   img {
     width: 100%;
+    text-align: center;
   }
 }
 
