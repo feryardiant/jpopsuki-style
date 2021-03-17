@@ -637,14 +637,17 @@ table .min_padding {
   }
 #index #menu #nav_index a:link,
   #torrents #menu #nav_torrents a:link,
+  #artists #menu #nav_artists a:link,
   #requests #menu #nav_requests a:link,
+  #collages #menu #nav_collages a:link,
   #forums #menu #nav_forums a:link,
   #top10 #menu #nav_top10 a:link,
   #rules #menu #nav_rules a:link,
   #staff #menu #nav_staff a:link,
-  #chat #menu #nav_irc a:link,
+  #irc #menu #nav_irc a:link,
+  #streaming #menu #nav_tv a:link,
   #wiki #menu #nav_wiki a:link,
-  #collage #menu #nav_collages a:link {
+  #kb2 #menu #nav_kb a:link {
     background-color: var(--header-link-hover-background-color);
   }
 #searchbars ul {
