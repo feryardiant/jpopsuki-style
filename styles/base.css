@@ -211,7 +211,6 @@ table {
   [class^=colhead] td,
   [class^=row] td,
   [class*=torrent] td {
-    border-top: 1px solid var(--table-border-color);
     border-bottom: 1px solid var(--table-border-color);
   }
 
@@ -253,6 +252,7 @@ table {
   padding: 24px;
   height: 100vh;
   background-color: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(1.5rem);
 
   &,
   img {
