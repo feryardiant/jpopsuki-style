@@ -580,12 +580,12 @@ table .min_padding {
     color: var(--header-link-color);
   }
 #header a:hover,
-    #header a:active,
-    #header a:focus,
-    #header a:focus-visible {
-      text-decoration: none;
-      background-color: var(--header-link-hover-background-color);
-    }
+  #header a:active,
+  #header a:focus,
+  #header a:focus-visible {
+    text-decoration: none;
+    background-color: var(--header-link-hover-background-color);
+  }
 #header strong {
     display: inline-block;
   }
@@ -595,10 +595,10 @@ table .min_padding {
     float: right;
     list-style: none;
   }
-#header ul li {
-      float: left;
-      line-height: 2em;
-    }
+#header li {
+    float: left;
+    line-height: 2em;
+  }
 #userinfo,
 #searchbars {
   background: var(--header-main-background-color);
@@ -614,23 +614,45 @@ table .min_padding {
     clear: both;
     display: table;
   }
-#userinfo #userinfo_stats {
-    float: left;
-    border-left: 0;
-  }
 #userinfo ul {
     padding: 0 5px;
     border-left: 1px solid var(--border-color);
   }
-#userinfo ul li {
-      font-size: 11px;
+#userinfo ul#userinfo_stats {
+      float: left;
+      border-left: 0;
     }
+#userinfo li {
+    font-size: 11px;
+    padding: 0;
+  }
+#userinfo a:link {
+    padding: 0 7px;
+  }
+#userinfo > #userinfo_username {
+    float: right;
+  }
+#menu a:link {
+    padding: 6px 13px;
+  }
+#index #menu #nav_index a:link,
+  #torrents #menu #nav_torrents a:link,
+  #requests #menu #nav_requests a:link,
+  #forums #menu #nav_forums a:link,
+  #top10 #menu #nav_top10 a:link,
+  #rules #menu #nav_rules a:link,
+  #staff #menu #nav_staff a:link,
+  #chat #menu #nav_irc a:link,
+  #wiki #menu #nav_wiki a:link,
+  #collage #menu #nav_collages a:link {
+    background-color: var(--header-link-hover-background-color);
+  }
 #searchbars ul {
     margin-right: 10px;
   }
-#searchbars ul li {
-      padding: 5px 0;
-    }
+#searchbars li {
+    padding: 5px 0;
+  }
 #searchbars input[type="text"] {
     font-size: 11px;
     line-height: 1.8em;
@@ -641,19 +663,6 @@ table .min_padding {
     #searchbars input[type="text"]:focus-visible {
       border-color: var(--link-color);
     }
-#userinfo ul a:link,
-#userinfo #userinfo_stats li {
-  padding: 0 7px;
-}
-#menu ul a:link {
-  padding: 6px 13px;
-}
-#userinfo #userinfo_stats li a:link {
-  padding: 0;
-}
-#userinfo > #userinfo_username {
-  float: right;
-}
 #alerts {
   text-align: center;
   position: absolute;
