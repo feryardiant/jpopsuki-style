@@ -30,6 +30,11 @@
     padding: 0 0 0 25px;
   }
 
+  .nobullet {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
   .poll {
     list-style: none;
     padding: 0;
