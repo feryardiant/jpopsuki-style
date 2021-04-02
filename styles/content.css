@@ -134,6 +134,11 @@
     .box {
       padding-left: 20px;
     }
+
+    #kb2 & {
+      position: sticky;
+      top: 110px;
+    }
   }
 
   .main_column {
