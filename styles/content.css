@@ -22,6 +22,8 @@
   background-color: var(--background-color);
   position: relative;
   padding: 0 20px 20px;
+  width: var(--container-width);
+  margin: 0 auto;
   z-index: 2;
 
   ul,
@@ -61,8 +63,7 @@
   }
 
   > .thin {
-    max-width: 1000px;
-    min-width: 800px;
+    width: 900px;
     margin: 0 auto;
     padding: 20px 0 0;
 
