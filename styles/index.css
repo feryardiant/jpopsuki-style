@@ -3,14 +3,6 @@
 @import 'variables.css';
 @import 'normalize.css';
 
-/* Main */
-@import 'base.css';
-@import 'header.css';
-@import 'alerts.css';
-@import 'content.css';
-@import 'torrent.css';
-@import 'footer.css';
-
 body {
   --footer-height: 130px;
 
@@ -18,3 +10,11 @@ body {
     --footer-height: 240px;
   }
 }
+
+/* Main */
+@import 'base.css';
+@import 'header.css';
+@import 'alerts.css';
+@import 'content.css';
+@import 'torrent.css';
+@import 'footer.css';
