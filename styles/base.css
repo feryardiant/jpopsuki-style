@@ -1,3 +1,11 @@
+body {
+  --footer-height: 130px;
+
+  &#index {
+    --footer-height: 240px;
+  }
+}
+
 * {
   box-sizing: border-box;
 

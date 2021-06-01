@@ -3,14 +3,6 @@
 @import 'variables.css';
 @import 'normalize.css';
 
-body {
-  --footer-height: 130px;
-
-  &#index {
-    --footer-height: 240px;
-  }
-}
-
 /* Main */
 @import 'base.css';
 @import 'header.css';
