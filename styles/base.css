@@ -1,11 +1,3 @@
-body {
-  --footer-height: 130px;
-
-  &#index {
-    --footer-height: 240px;
-  }
-}
-
 * {
   box-sizing: border-box;
 
@@ -29,6 +21,12 @@ html {
 }
 
 body {
+  --footer-height: 130px;
+
+  &#index {
+    --footer-height: 240px;
+  }
+
   background-color: var(--background-color);
   margin-bottom: var(--footer-height);
   padding-top: 96px;
