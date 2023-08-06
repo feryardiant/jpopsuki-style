@@ -20,6 +20,10 @@ jobs:
   build:
     runs-on: ubuntu-20.04
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -43,20 +47,11 @@ jobs:
     - name: Store pages
       uses: actions/upload-pages-artifact@v2
       with:
-        name: build
         path: public
 
-  deploy:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-    needs: build
-
-    environment:
-      name: github-pages
-      url: https://feryardiant.id/jpopsuki-style/
-
-    steps:
     - name: Deploy
+      if: github.event_name == 'push'
+      id: deployment
       uses: actions/deploy-pages@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
