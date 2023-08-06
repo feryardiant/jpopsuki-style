@@ -33,13 +33,13 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "cssnano": "^5.0.12",
+    "cssnano": "^6.0.1",
     "postcss": "^8.2.10",
-    "postcss-cli": "^9.0.2",
-    "postcss-import": "^14.0.1",
-    "postcss-nested": "^5.0.5",
-    "stylelint": "^14.1.0",
-    "stylelint-config-standard": "^24.0.0"
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0"
   },
   "browserslist": [
     "> 1%",
@@ -67,7 +67,20 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "function-url-quotes": "always"
+      "function-url-quotes": "always",
+      "import-notation": "string",
+      "selector-class-pattern": [
+        "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
+        {
+          "message": "Expected class selector \"%s\" to be snake_case"
+        }
+      ],
+      "selector-id-pattern": [
+        "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
+        {
+          "message": "Expected id selector \"%s\" to be snake_case"
+        }
+      ]
     }
   }
 }
