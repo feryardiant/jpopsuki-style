@@ -43,7 +43,7 @@
     vertical-align: top;
   }
 
-  [class*=_redline] td {
+  [class*="_redline"] td {
     background-color: rgb(255 0 0 / 20%);
     border-color: #e78d8d;
 
@@ -58,7 +58,7 @@
     text-align: center;
   }
 
-  [class*=torrent] span {
+  [class*="torrent"] span {
     float: right;
   }
 }

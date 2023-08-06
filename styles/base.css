@@ -218,18 +218,18 @@ table {
     padding: 7px 4px;
   }
 
-  [class^=colhead] td,
-  [class^=row] td,
-  [class*=torrent] td {
+  [class^="colhead"] td,
+  [class^="row"] td,
+  [class*="torrent"] td {
     border-bottom: 1px solid var(--table-border-color);
   }
 
   .forum_group_header,
-  [class^=colhead] {
+  [class^="colhead"] {
     font-weight: 600;
   }
 
-  [class^=colhead] td {
+  [class^="colhead"] td {
     background-color: var(--table-header-background-color);
     backdrop-filter: blur(1.5rem);
     position: sticky;
@@ -280,7 +280,7 @@ table {
   float: none;
 
   &::after {
-    content: '';
+    content: "";
     clear: both;
     display: table;
   }
