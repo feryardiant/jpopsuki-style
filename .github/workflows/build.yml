@@ -57,6 +57,6 @@ jobs:
 
     steps:
     - name: Deploy
-      uses: actions/deploy-pages@2
+      uses: actions/deploy-pages@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
