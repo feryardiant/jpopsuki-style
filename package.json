@@ -5,8 +5,9 @@
   "description": "Just stylesheet for my personal JPopSuki account",
   "homepage": "https://feryardiant.id/jpopsuki-style#readme",
   "author": "Fery Wardiyanto <ferywardiyanto@gmail.com>",
-  "license": "MIT",
+  "license": "WTFPL",
   "repository": "github:feryardiant/jpopsuki-style",
+  "funding": "https://github.com/sponsors/feryardiant",
   "bugs": {
     "url": "https://github.com/feryardiant/jpopsuki-style/issues"
   },
