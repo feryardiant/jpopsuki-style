@@ -3,14 +3,18 @@ name: GitHub Page
 on:
   pull_request:
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
-    paths:
-      - .github/workflows/build.yml
-      - public/*
-      - styles/*
+      - main
+
+permissions:
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -18,23 +22,16 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v3
 
     - name: Setup Node.JS
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
-
-    - name: Cache Dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-
+        node-version: 16.x
+        cache: npm
 
     - name: Install Dependencies
-      run: npm install
+      run: npm ci
 
     - name: Generate
       run: |
@@ -43,11 +40,23 @@ jobs:
         npm run minify
         cp .gitignore public/
 
-    - name: Deploy
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      uses: JamesIves/github-pages-deploy-action@4.1.0
+    - name: Store pages
+      uses: actions/upload-pages-artifact@v2
       with:
-        token: ${{ secrets.PAT }}
-        commit-message: 'publish: generate github pages'
-        branch: gh-pages
-        folder: 'public'
+        name: build
+        path: public
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    needs: build
+
+    environment:
+      name: github-pages
+      url: https://feryardiant.id/jpopsuki-style/
+
+    steps:
+    - name: Deploy
+      uses: actions/deploy-pages@2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
