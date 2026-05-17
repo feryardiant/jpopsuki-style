@@ -33,13 +33,13 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "cssnano": "^6.0.1",
+    "cssnano": "^8.0.1",
     "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.1",
-    "stylelint": "^15.10.2",
-    "stylelint-config-standard": "^34.0.0"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-nested": "^7.0.2",
+    "stylelint": "^17.11.1",
+    "stylelint-config-standard": "^40.0.0"
   },
   "browserslist": [
     "> 1%",
