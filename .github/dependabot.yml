@@ -1,0 +1,30 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      timezone: Asia/Jakarta
+    labels:
+      - dependencies
+    groups:
+      dependencies:
+        patterns: ['*']
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+      timezone: Asia/Jakarta
+    open-pull-requests-limit: 10
+    versioning-strategy: increase-if-necessary
+    groups:
+      postcss:
+        patterns: ['postcss', 'postcss-*']
+        update-types: [minor]
+      stylelint:
+        patterns: ['stylelint', 'stylelint-*']
+        update-types: [minor]
+    labels:
+      - dependencies
