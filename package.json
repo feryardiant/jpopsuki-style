@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "cssnano": "^8.0.1",
+    "cssnano": "^9.0.1",
     "postcss": "^8.4.31",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
