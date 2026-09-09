@@ -36,7 +36,7 @@
     "cssnano": "^8.0.1",
     "postcss": "^8.4.31",
     "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.1.1",
+    "postcss-import": "^17.0.0",
     "postcss-nested": "^7.0.2",
     "stylelint": "^17.11.1",
     "stylelint-config-standard": "^40.0.0"
